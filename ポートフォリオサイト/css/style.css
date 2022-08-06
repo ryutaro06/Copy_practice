@@ -42,6 +42,10 @@ img {
 .header-nav a {
     color: #000;
 }
+.header-nav img {
+    width: 25px;
+    height: 25px;
+}
 
 /* section */
 .main-img {
@@ -65,26 +69,38 @@ img {
 }
 .news-content {
     border-bottom: 1px solid #000;
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    line-height: 4;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+.news-content dt {
+    width: 20%;
+    border-top: 1px solid #000;
+    padding: 15px;
+}
+.news-content dd {
+    width: 80%;
+    border-top: 1px solid #000;
+    padding: 15px;
 }
 #contact {
     text-align: center;
     margin-bottom: 100px;
 }
 .contact-form {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 10px;
 }
 .contact-form label {
-    text-align-last: left;
+    width: 20%;
+    text-align: left;
 }
-input[type="text"],
+.contact-form input[type="text"],
 input[type="email"],
 textarea {
     border: 1px solid rgba(0, 0, 0, .5);
+    width: 80%;
 }
 .button {
     background-color: #000;
@@ -104,4 +120,39 @@ footer {
     padding: 10px 0;
     background-color: #000;
     color: #fff;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 600px) {
+    .page-header {
+        flex-direction: column;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .news-content {
+        flex-direction: column;
+    }
+    .news-content dt {
+        width: 100%;
+        padding: 15px 15px 0 15px;
+    }
+    .news-content dd {
+        width: 100%;
+        border-top: none;
+        padding: 0 15px 15px 15px;
+    }
+    .contact-form {
+        flex-direction: column;
+    }
+    .contact-form label {
+        width: 100%;
+    }
+    .contact-form input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+    }
 }

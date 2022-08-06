@@ -52,13 +52,13 @@ li {
 
 /* section */
 .content {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     text-align: center;
 }
 .content-title {
     font-size: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 60px;
 }
 .content-title span {
     padding-bottom: 5px;
@@ -92,10 +92,27 @@ li {
    width: 30%; 
 }
 
-
-
 /* footer */
 footer {
     padding: 20px 0;
     text-align: center;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 600px) {
+    .profile {
+        flex-direction: column;
+    }
+    .baseball-post {
+        flex-direction: column;
+    }
+    .baseball {
+        width: 100%;
+    }
+    .baseball h3 {
+        padding: 15px 0;
+    }
+    .baseball p {
+        margin-bottom: 20px;
+    }
 }
