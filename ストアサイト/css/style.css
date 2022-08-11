@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+/* 共通部分 */
+html {
+    font-size: 100%;
+}
+body {
+    line-height: 1.7;
+}
+a {
+    text-decoration: none;
+}
+img {
+    width: 100%;
+}
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+/* header */
+.page-header {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.page-header a{
+    color: #000;
+    font-size: 20px;
+}
+
+/* main-content*/
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.items {
+    margin-bottom: 20px;
+}
+.items a {
+    color: #000;
+}
+.items p {
+    font-size: 12px;
+}
+.items img:hover {
+    opacity: 0.6;
+}
+.page-title {
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* sub-content */
+.sub-content {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.sub-content a  {
+    color: #000;
+}
+.sub-content a:hover {
+    color: #0ff;
+}
+.sub-content ul {
+    display: flex;
+    justify-content: center;
+}
+.sub-content li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+
+/* footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.footer-nav {
+    display: flex;
+}
+.footer-nav li {
+    list-style: none;
+    margin-right: 30px;
+}
+.footer-nav a {
+    color: #000;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 750px) {
+    .main-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
