@@ -42,10 +42,15 @@ img {
     font-size: 20px;
 }
 
-.menu-open {
-    background-color: #000;
-    opacity: 0.4;
-    z-index: 10;
+.menu-open #fixed {
+    background-color: #222;
+    opacity: 0.9;
+    /* z-index: 10; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 #js-navi {
     display: none;
@@ -54,7 +59,7 @@ img {
 .menu-open #js-navi {
     display: block;
     position: absolute;
-    top: 50px;
+    top: 20px;
     left: 50px;
 }
 .menu-open #js-navi li {
@@ -63,8 +68,9 @@ img {
 }
 .menu-open #js-navi a {
     color: #fff;
-    opacity: 1 !important;
-    z-index: 20;
+    font-size: 14px;
+    /* opacity: 1 !important; */
+    /* z-index: 20; */
 }
 
 
