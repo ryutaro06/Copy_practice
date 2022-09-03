@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Media site</title>
 
     <!-- css -->
     <link rel="stylesheet" href="css/ress.css">
@@ -13,19 +13,25 @@
 <body>
     <header class="wrapper" id="fixed">
         <div class="page-header">
-            <h1><a href="index.html">Media site</a></h1>
+            <h1><a href="index.html">Furniture Design</a></h1>
             <nav id="js-navi">
                 <ul class="nav-menu">
-                  <li><a href="products.html">PRODUCTS</a></li>
-                  <li><a href="about.html">ABOUT</a></li>
-                  <li><a href="company.html">COMPANY</a></li>
-                  <li><a href="mailto:xxxxx@xxx.xxx.com?subject=お問い合わせ">CONTACT</a></li>
+                  <li><a href="#pickup" id="pickup_link">PICK UP</a></li>
+                  <li><a href="#feature" id ="feature_link">FEATURE</a></li>
+                  <li><a href="#contact" id ="contact_link">CONTACT</a></li>
+                </ul>
+                <ul class="nav-sns">
+                    <li><a href="https://www.instagram.com">Instagram</a></li>
+                    <li><a href="https://twitter.com/">Twitter</a></li>
+                    <li><a href="https://www.facebook.com/">Facebook</a></li>
                 </ul>
             </nav>
-            <button class="mobile-menu-icon" onclick="document.querySelector('body').classList.toggle('menu-open');">
+            <div id="mobile-menu-icon">
                 <span></span>
                 <span></span>
-            </button>
+                <span></span>
+            </div>
+            <div id="mask"></div>
         </div>
     </header>
     <div id="video">
@@ -127,7 +133,7 @@
         </div>
     </section>
     <section id="contact" class="wrapper_content">
-        <h2 class="topics-title">FEATURE</h2>
+        <h2 class="topics-title">CONTACT</h2>
         <div class="contact-flex">
             <div class="contact-text">
                 <p>
@@ -168,19 +174,7 @@
             <p><small>&copy;Ochi</small></p>
         </div>
     </footer>
-    <script>
-        let fadeInTarget = document.querySelectorAll('.fade-in');
-        window.addEventListener('scroll', () => {
-            for (let i = 0; i < fadeInTarget.length; i++){
-                const rect = fadeInTarget[i].getBoundingClientRect().top;
-                const scroll = window.pageYOffset || document.documentElement.scrollTop;
-                const offset = rect + scroll;
-                const windowHeight = window.innerHeight; // 現在のブラウザの高さ
-                if (scroll > offset - windowHeight + 50) {
-                    fadeInTarget[i].classList.add('scroll-in');
-                }
-            }
-        });
-    </script>
+    <!-- JavaScript -->
+    <script src="js/javascript.js"></script>
 </body>
 </html>

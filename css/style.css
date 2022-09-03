@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+/* 共有部分 */
+html {
+    font-size: 100%;
+}
+body {
+    line-height: 1.7;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding:0 4%;
+}
+li {
+    list-style: none;
+}
+
+/* header */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.header-title {
+    background-color: #000;
+    padding: 10px 15px;
+    font-size: 20px;
+}
+.header-title a {
+    color: #fff;
+}
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.main-nav li {
+    margin-left: 30px;
+}
+.main-nav a {
+    color: black;
+}
+
+/* section */
+.content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.content-title {
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+.content-title span {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #000;
+}
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    margin: 0 auto;
+}
+.profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.profile-text {
+    width: 70%;
+    text-align-last: left;
+    margin-left: 50px;
+}
+.profile-name {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.baseball-post {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.profile-item a {
+    display: block;
+    color: #333;
+    padding: 40px 60px;
+    border: 1px solid #333;
+    margin: 10px;
+    background-color: #fbf8ef;
+    font-weight: bold;
+
+}
+.profile-item a:hover {
+    color: #0bd;
+}
+
+/* footer */
+footer {
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 600px) {
+    .profile {
+        flex-direction: column;
+    }
+    .baseball-post {
+        grid-template-columns: 1fr;
+    }
+}

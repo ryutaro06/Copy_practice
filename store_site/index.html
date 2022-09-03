@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ストアサイト - top</title>
 
     <!-- css -->
     <link rel="stylesheet" href="css/ress.css">
@@ -22,14 +22,14 @@
                   <li><a href="mailto:xxxxx@xxx.xxx.com?subject=お問い合わせ">CONTACT</a></li>
                 </ul>
             </nav>
-            <button class="mobile-menu-icon" onclick="document.querySelector('body').classList.toggle('menu-open');">
+            <button id="mobile-menu-icon">
                 <span></span>
                 <span></span>
             </button>
+            <div id="mask"></div>
         </div>
     </header>
     <main class="wrapper" id="top">
-        <h2 class="page-title">products</h2>
         <div class="main-content">
             <div class="items">
                 <a href="item1.html">
@@ -60,13 +60,19 @@
                 </a>
             </div>
             <div class="items">
-                <a href="#">
+                <a href="item1.html">
                     <img src="img/IMG_1784.JPG" alt="">
                     <p>プロダクトタイトルプロダクトタイトル</p>
                     <p>¥99,999 +tax</p>
                 </a>
             </div>
-
+            <div class="items">
+                <a href="#">
+                    <img src="img/IMG_1796.JPG" alt="">
+                    <p>プロダクトタイトルプロダクトタイトル</p>
+                    <p>¥99,999 +tax</p>
+                </a>
+            </div>
             <div class="items">
                 <a href="item1.html">
                     <img src="img/IMG_1802.JPG" alt="">
@@ -74,52 +80,29 @@
                     <p>¥99,999 +tax</p>
                 </a>
             </div>
-
             <div class="items">
                 <a href="item1.html">
-                    <img src="img/IMG_0811.JPG" alt="">
-                    <p>プロダクトタイトルプロダクトタイトル</p>
-                    <p>¥99,999 +tax</p>
-                </a>
-            </div>
-            <div class="items">
-                <a href="item1.html">
-                    <img src="img/IMG_0812.JPG" alt="">
-                    <p>プロダクトタイトルプロダクトタイトル</p>
-                    <p>¥99,999 +tax</p>
-                </a>
-            </div>
-            <div class="items">
-                <a href="item1.html">
-                    <img src="img/IMG_0815.JPG" alt="">
-                    <p>プロダクトタイトルプロダクトタイトル</p>
-                    <p>¥99,999 +tax</p>
-                </a>
-            </div>
-            <div class="items">
-                <a href="item1.html">
-                    <img src="img/IMG_0817.JPG" alt="">
+                    <img src="img/IMG_1805.JPG" alt="">
                     <p>プロダクトタイトルプロダクトタイトル</p>
                     <p>¥99,999 +tax</p>
                 </a>
             </div>
         </div>
         <div class="sub-content">
-            <ul>
-                <li><a href="products.html">1</a></li>
-                <li><a href="products2.html">2</a></li>
-            </ul>
+            <a href="products.html">View Mone</a>
         </div>
-        </main>
-        <footer class="footer wrapper">
-            <nav>
-                <ul class="footer-nav">
-                    <li><a href="https://www.instagram.com">Instagram</a></li>
-                    <li><a href="https://twitter.com/">Twitter</a></li>
-                    <li><a href="https://www.facebook.com/">Facebook</a></li>
-                </ul>
-            </nav>
-            <p><small>&copy;Ochi design</small></p>
-        </footer>
+    </main>
+    <footer class="footer wrapper">
+        <nav>
+            <ul class="footer-nav">
+                <li><a href="https://www.instagram.com">Instagram</a></li>
+                <li><a href="https://twitter.com/">Twitter</a></li>
+                <li><a href="https://www.facebook.com/">Facebook</a></li>
+            </ul>
+        </nav>
+        <p><small>&copy;Ochi design</small></p>
+    </footer>
+    <!-- JavaScript -->
+    <script src="js/javascript.js"></script>
 </body>
 </html>

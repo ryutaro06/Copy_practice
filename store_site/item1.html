@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ストアサイト - item</title>
 
     <!-- css -->
     <link rel="stylesheet" href="css/ress.css">
@@ -22,10 +22,11 @@
                   <li><a href="mailto:xxxxx@xxx.xxx.com?subject=お問い合わせ">CONTACT</a></li>
                 </ul>
             </nav>
-            <button class="mobile-menu-icon" onclick="document.querySelector('body').classList.toggle('menu-open');">
+            <button id="mobile-menu-icon">
                 <span></span>
                 <span></span>
             </button>
+            <div id="mask"></div>
         </div>
     </header>
     <main class="wrapper" id="main">
@@ -73,5 +74,7 @@
             </nav>
             <p><small>&copy;Ochi design</small></p>
         </footer>
+        <!-- JavaScript -->
+        <script src="js/javascript.js"></script>
 </body>
 </html>

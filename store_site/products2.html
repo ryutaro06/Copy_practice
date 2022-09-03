@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ストアサイト - products2</title>
 
     <!-- css -->
     <link rel="stylesheet" href="css/ress.css">
@@ -22,13 +22,14 @@
                   <li><a href="mailto:xxxxx@xxx.xxx.com?subject=お問い合わせ">CONTACT</a></li>
                 </ul>
             </nav>
-            <button class="mobile-menu-icon" onclick="document.querySelector('body').classList.toggle('menu-open');">
+            <button id="mobile-menu-icon">
                 <span></span>
                 <span></span>
             </button>
+            <div id="mask"></div>
         </div>
     </header>
-    <main class="wrapper" id="main">
+    <main class="wrapper" id="top">
         <h2 class="page-title">products</h2>
         <div class="main-content">
             <div class="items">
@@ -60,19 +61,13 @@
                 </a>
             </div>
             <div class="items">
-                <a href="item1.html">
+                <a href="#">
                     <img src="img/IMG_1784.JPG" alt="">
                     <p>プロダクトタイトルプロダクトタイトル</p>
                     <p>¥99,999 +tax</p>
                 </a>
             </div>
-            <div class="items">
-                <a href="item1.html">
-                    <img src="img/IMG_1796.JPG" alt="">
-                    <p>プロダクトタイトルプロダクトタイトル</p>
-                    <p>¥99,999 +tax</p>
-                </a>
-            </div>
+
             <div class="items">
                 <a href="item1.html">
                     <img src="img/IMG_1802.JPG" alt="">
@@ -80,13 +75,7 @@
                     <p>¥99,999 +tax</p>
                 </a>
             </div>
-            <div class="items">
-                <a href="item1.html">
-                    <img src="img/IMG_1805.JPG" alt="">
-                    <p>プロダクトタイトルプロダクトタイトル</p>
-                    <p>¥99,999 +tax</p>
-                </a>
-            </div>
+
             <div class="items">
                 <a href="item1.html">
                     <img src="img/IMG_0811.JPG" alt="">
@@ -133,5 +122,7 @@
             </nav>
             <p><small>&copy;Ochi design</small></p>
         </footer>
+        <!-- JavaScript -->
+        <script src="js/javascript.js"></script>
 </body>
 </html>
