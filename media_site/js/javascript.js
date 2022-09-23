@@ -25,16 +25,18 @@ document.getElementById("mask").onclick = function() {
     // openクラスを削除して、メニューを閉じる
     fixed.classList.remove("menu-open");
 }
-// pickをクリックすると、メニューを閉じる
-document.getElementById("pickup_link").onclick = function() {
-    fixed.classList.remove("menu-open");
-}
-// featureをクリックすると、メニューを閉じる
-document.getElementById("feature_link").onclick = function() {
-    fixed.classList.remove("menu-open");
-}
-// contactをクリックすると、メニューを閉じる
-document.getElementById("contact_link").onclick = function() {
+// nav-menu内のaタグを押した時にmenu-openクラスを外す
+// nav-menu内のaタグの要素数を取得する（配列で取得）
+const nav_menu = document.querySelectorAll('.nav-menu a');
+// nav-menuのaタグ分繰り返す
+nav_menu.forEach((nav, i) => {
+    // したい事を書く。今回はクリック毎にmenu-openのクラスを外す関数を記載している
+    nav.onclick = function() {
+        fixed.classList.remove("menu-open");
+    }
+});
+
+nav_menu.onclick = function() {
     fixed.classList.remove("menu-open");
 }
 

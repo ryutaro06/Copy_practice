@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScriptの学習</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/ress.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- JavaScript -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"
+        integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg=="
+        crossorigin="anonymous">
+    </script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@next/dist/chartjs-adapter-date-fns.bundle.min.js">
+    </script>
+</head>
+<body>
+    <header class="wrapper" id="fixed">
+        <div class="page-header">
+            <h1><a href="index.html">JavaScriptの学習</a></h1>
+            <nav id="js-navi">
+                <ul class="nav-menu">
+                  <li><a href="#graph">グラフ表示</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a href="company.html">COMPANY</a></li>
+                  <li><a href="mailto:xxxxx@xxx.xxx.com?subject=お問い合わせ">CONTACT</a></li>
+                </ul>
+            </nav>
+            <button id="mobile-menu-icon">
+                <span></span>
+                <span></span>
+            </button>
+            <div id="mask"></div>
+        </div>
+    </header>
+    <main id="top" class="wrapper">
+        <section>
+            <h1 class="content-title" id ="graph">グラフ表示</h1>
+            <div class="graph_flex">
+                <canvas id="mychart_line" class="graph_area" ></canvas>
+                <canvas id="mychart_doughnut" class="graph_area"></canvas>
+                <canvas id="mychart_pie" class="graph_area"></canvas>
+                <canvas id="mychart_bar" class="graph_area"></canvas>
+            </div>
+        </section>
+    </main>
+    <!-- JavaScript -->
+    <script src="js/javascript.js"></script>
+</body>
+</html>
