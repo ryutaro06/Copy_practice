@@ -18,6 +18,9 @@
     <script
         src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@next/dist/chartjs-adapter-date-fns.bundle.min.js">
     </script>
+    <script 
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script>
 </head>
 <body>
     <header class="wrapper" id="fixed">
@@ -46,6 +49,21 @@
                 <canvas id="mychart_doughnut" class="graph_area"></canvas>
                 <canvas id="mychart_pie" class="graph_area"></canvas>
                 <canvas id="mychart_bar" class="graph_area"></canvas>
+                <canvas id="mychart_time" class="graph_area"></canvas>
+                <canvas id="mychart_bar-stack" class="graph_area"></canvas>
+            </div>
+        </section>
+        <section>
+            <h1 class="content-title">クリックで画像切替</h1>
+            <div class="main_img"><img src="img/IMG_001.JPG" alt=""></div>
+            <div class="sub_img">
+                <dl>
+                    <dt><img src="img/IMG_001.JPG" alt=""></dt>
+                    <dt><img src="img/IMG_002.JPG" alt=""></dt>
+                    <dt><img src="img/IMG_003.JPG" alt=""></dt>
+                    <dt><img src="img/IMG_004.JPG" alt=""></dt>
+                    <dt><img src="img/IMG_005.JPG" alt=""></dt>
+                </dl>
             </div>
         </section>
     </main>

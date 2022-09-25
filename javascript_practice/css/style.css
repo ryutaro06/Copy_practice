@@ -160,7 +160,35 @@ section {
     flex-wrap: wrap;
 }
 .graph_area {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 350px;
+    max-height: 350px;
     padding-top: 20px;
+    padding: 40px 10px;
+}
+
+/* クリックで画像切替 */
+section .main_img {
+    width: 70%;
+    margin: 50px auto 0;
+}
+section .sub_img dl
+{
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+}
+section .sub_img dl dt
+{
+	display: table-cell;
+	width: 24%;
+	vertical-align: top;
+	border: 10px solid #FFF;
+}
+section .sub_img dl dt img
+{
+	cursor:pointer;
+}
+.select
+{
+	border: 10px solid #444 !important;
 }
