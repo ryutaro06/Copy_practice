@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScriptの学習</title>
 
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <!-- css -->
     <link rel="stylesheet" href="css/ress.css">
     <link rel="stylesheet" href="css/style.css">
+
     <!-- JavaScript -->
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"
@@ -29,7 +32,7 @@
             <nav id="js-navi">
                 <ul class="nav-menu">
                   <li><a href="#graph">グラフ表示</a></li>
-                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a href="#swiper_link">Swiper</a></li>
                   <li><a href="company.html">COMPANY</a></li>
                   <li><a href="mailto:xxxxx@xxx.xxx.com?subject=お問い合わせ">CONTACT</a></li>
                 </ul>
@@ -42,8 +45,8 @@
         </div>
     </header>
     <main id="top" class="wrapper">
-        <section>
-            <h1 class="content-title" id ="graph">グラフ表示</h1>
+        <section id ="graph">
+            <h1 class="content-title">グラフ表示</h1>
             <div class="graph_flex">
                 <canvas id="mychart_line" class="graph_area" ></canvas>
                 <canvas id="mychart_doughnut" class="graph_area"></canvas>
@@ -53,21 +56,112 @@
                 <canvas id="mychart_bar-stack" class="graph_area"></canvas>
             </div>
         </section>
-        <section>
-            <h1 class="content-title">クリックで画像切替</h1>
-            <div class="main_img"><img src="img/IMG_001.JPG" alt=""></div>
-            <div class="sub_img">
-                <dl>
-                    <dt><img src="img/IMG_001.JPG" alt=""></dt>
-                    <dt><img src="img/IMG_002.JPG" alt=""></dt>
-                    <dt><img src="img/IMG_003.JPG" alt=""></dt>
-                    <dt><img src="img/IMG_004.JPG" alt=""></dt>
-                    <dt><img src="img/IMG_005.JPG" alt=""></dt>
-                </dl>
+        <section class="swiper_time" id="swiper_link">
+            <h1 class="content-title">Swiper</h1>
+            <!-- Swiper -->
+            <p>0.5s時間毎に画像を移動</p>
+            <div class="swiper mySwiper_time">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/IMG_001.JPG" alt=""></div>
+                    <div class="swiper-slide"><img src="img/IMG_002.JPG" alt=""></div>
+                    <div class="swiper-slide"><img src="img/IMG_003.JPG" alt=""></div>
+                    <div class="swiper-slide"><img src="img/IMG_004.JPG" alt=""></div>
+                    <div class="swiper-slide"><img src="img/IMG_005.JPG" alt=""></div>
+                    <div class="swiper-slide"><img src="img/IMG_006.JPG" alt=""></div>
+                    <div class="swiper-slide"><img src="img/IMG_007.JPG" alt=""></div>
+                </div>
+                <!-- 必要に応じてページネーション -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- Default -->
+            <p>矢印(<>)をクリックして画像を移動</p>
+            <div class="swiper mySwiper_click">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/IMG_001.JPG" alt=""></div>
+                    <div class="swiper-slide"><img src="img/IMG_002.JPG" alt=""></div>
+                    <div class="swiper-slide"><img src="img/IMG_003.JPG" alt=""></div>
+                    <div class="swiper-slide"><img src="img/IMG_004.JPG" alt=""></div>
+                    <div class="swiper-slide"><img src="img/IMG_005.JPG" alt=""></div>
+                    <div class="swiper-slide"><img src="img/IMG_006.JPG" alt=""></div>
+                    <div class="swiper-slide"><img src="img/IMG_007.JPG" alt=""></div>
+                </div>
+                <!-- 必要に応じてナビボタン -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+            <!-- Slides per view -->
+            <p>画像３つ並べる</p>
+            <div class="swiper mySwiper_per_view">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide img_100"><img src="img/IMG_001.JPG" alt=""></div>
+                    <div class="swiper-slide img_100"><img src="img/IMG_002.JPG" alt=""></div>
+                    <div class="swiper-slide img_100"><img src="img/IMG_003.JPG" alt=""></div>
+                    <div class="swiper-slide img_100"><img src="img/IMG_004.JPG" alt=""></div>
+                    <div class="swiper-slide img_100"><img src="img/IMG_005.JPG" alt=""></div>
+                    <div class="swiper-slide img_100"><img src="img/IMG_006.JPG" alt=""></div>
+                    <div class="swiper-slide img_100"><img src="img/IMG_007.JPG" alt=""></div>
+                </div>
+                <!-- 必要に応じてページネーション -->
+                <div class="swiper-pagination"></div>
+                <!-- 必要に応じてナビボタン -->
+                <div class="swiper-button-next sideclick_button"></div>
+                <div class="swiper-button-prev sideclick_button"></div>
+            </div>
+
+            <!-- Effect coverflow -->
+            <p>メイン画像とサブ画像</p>
+            <div class="swiper mySwiper_effect_coverflow">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide img_100"><img src="img/IMG_001.JPG" alt=""></div>
+                    <div class="swiper-slide img_100"><img src="img/IMG_002.JPG" alt=""></div>
+                    <div class="swiper-slide img_100"><img src="img/IMG_003.JPG" alt=""></div>
+                    <div class="swiper-slide img_100"><img src="img/IMG_004.JPG" alt=""></div>
+                    <div class="swiper-slide img_100"><img src="img/IMG_005.JPG" alt=""></div>
+                    <div class="swiper-slide img_100"><img src="img/IMG_006.JPG" alt=""></div>
+                    <div class="swiper-slide img_100"><img src="img/IMG_007.JPG" alt=""></div>
+                </div>
+                <!-- 必要に応じてページネーション -->
+                <div class="swiper-pagination"></div>
+                <!-- 必要に応じてナビボタン -->
+                <div class="swiper-button-next sideclick_button"></div>
+                <div class="swiper-button-prev sideclick_button"></div>
+            </div>
+
+            <!-- Thumbs gallery loop -->
+            <div class="thumbs_gallery_loop">
+                <p>ギャラリー型</p>
+                <div class="swiper mySwiper_thumbs_gallery_loop2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/IMG_001.JPG" alt=""></div>
+                        <div class="swiper-slide"><img src="img/IMG_002.JPG" alt=""></div>
+                        <div class="swiper-slide"><img src="img/IMG_003.JPG" alt=""></div>
+                        <div class="swiper-slide"><img src="img/IMG_004.JPG" alt=""></div>
+                        <div class="swiper-slide"><img src="img/IMG_005.JPG" alt=""></div>
+                        <div class="swiper-slide"><img src="img/IMG_006.JPG" alt=""></div>
+                        <div class="swiper-slide"><img src="img/IMG_007.JPG" alt=""></div>
+                    </div>
+                    <div class="swiper-button-next sideclick_button"></div>
+                    <div class="swiper-button-prev sideclick_button"></div>
+                </div>
+                <div thumbsSlider="" class="swiper mySwiper_thumbs_gallery_loop">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/IMG_001.JPG" alt=""></div>
+                        <div class="swiper-slide"><img src="img/IMG_002.JPG" alt=""></div>
+                        <div class="swiper-slide"><img src="img/IMG_003.JPG" alt=""></div>
+                        <div class="swiper-slide"><img src="img/IMG_004.JPG" alt=""></div>
+                        <div class="swiper-slide"><img src="img/IMG_005.JPG" alt=""></div>
+                        <div class="swiper-slide"><img src="img/IMG_006.JPG" alt=""></div>
+                        <div class="swiper-slide"><img src="img/IMG_007.JPG" alt=""></div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <!-- JavaScript -->
     <script src="js/javascript.js"></script>
+
 </body>
 </html>

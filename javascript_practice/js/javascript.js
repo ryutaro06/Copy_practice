@@ -19,11 +19,23 @@ document.getElementById("mobile-menu-icon").onclick = function() {
         fixed.classList.add("menu-open");
     }
 };
+
 // メニューが表示されている時に画面をクリックした場合
 document.getElementById("mask").onclick = function() {
     // openクラスを削除して、メニューを閉じる
     fixed.classList.remove("menu-open");
 }
+
+// nav-menu内のaタグを押した時にmenu-openクラスを外す
+// nav-menu内のaタグの要素数を取得する（配列で取得）
+const nav_menu = document.querySelectorAll('.nav-menu a');
+// nav-menuのaタグ分繰り返す
+nav_menu.forEach((nav, i) => {
+    // したい事を書く。今回はクリック毎にmenu-openのクラスを外す関数を記載している
+    nav.onclick = function() {
+        fixed.classList.remove("menu-open");
+    }
+});
 
 // chart.js
 // 折線グラフ
@@ -242,27 +254,87 @@ var myChart = new Chart(ctx_bar_stack, {
   },
 });
 
-// クリックで画像切替
-$(function()
-{
-  // サブ画像を選択状態にする（selectクラスを付与して太枠をつける）
-	$(".sub_img dt").eq(0).addClass("select");
-  // サブ画像をクリックされた時の処理
-	$(".sub_img img").click(function()
-	{
-    // サブ画像のパスを取り出す
-		var img = $(this).attr("src");
- 
-    // サブ画像を非選択状態にする（selectクラスを外す）
-		$(".sub_img dt").removeClass("select");
-    // サブ画像を選択状態にする（selectクラスを付与して太枠をつける）
-		$(this).parent().addClass("select");
- 
-    // メイン画像の差し替え
-		$(".main_img img").fadeOut(500, function()
-		{
-			$(this).attr("src", img),
-			$(this).fadeIn(500)
-		});
-	});
-});
+
+//Initialize Swiper
+
+    // mySwiper＿time
+    var swiper = new Swiper(".mySwiper_time", {
+        loop: true,
+        autoplay: {
+            delay: 500,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+        }
+    });
+    // mySwiper_click
+    var swiper = new Swiper(".mySwiper_click", {
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+    // Slides per view
+    var swiper = new Swiper(".mySwiper_per_view", {
+        loop: true,
+        centeredSlides: true,
+        slidesPerView: 1,
+        breakpoints: {
+            // 768px以上の場合
+            768: {
+            slidesPerView: 3
+            }
+        },
+        spaceBetween: 20,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+  });
+  // Effect coverflow
+  var swiper = new Swiper(".mySwiper_effect_coverflow", {
+    loop: true,
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },
+  });
+  // Thumbs gallery loop
+  var swiper = new Swiper(".mySwiper_thumbs_gallery_loop", {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 5,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  var swiper2 = new Swiper(".mySwiper_thumbs_gallery_loop2", {
+    loop: true,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+      swiper: swiper,
+    },
+  });
