@@ -8,6 +8,9 @@
 
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <!--Link Loding's CSS-->
+  <link href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css" rel="stylesheet">
+  <link href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/4-1-1/css/4-1-1.css" rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="css/ress.css">
     <link rel="stylesheet" href="css/style.css">
@@ -26,6 +29,9 @@
     </script>
 </head>
 <body>
+    <div id="splash">
+        <div id="splash_text"></div>
+    </div>
     <header class="wrapper" id="fixed">
         <div class="page-header">
             <h1><a href="index.html">JavaScriptの学習</a></h1>
@@ -127,7 +133,6 @@
                 <div class="swiper-button-next sideclick_button"></div>
                 <div class="swiper-button-prev sideclick_button"></div>
             </div>
-
             <!-- Thumbs gallery loop -->
             <div class="thumbs_gallery_loop">
                 <p>ギャラリー型</p>
@@ -157,9 +162,16 @@
                 </div>
             </div>
         </section>
+        <section id="loading_link">
+            <h1 class="content-title">ローディング機能</h1>
+
+
+        </section>
     </main>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- loding JS -->
+    <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
     <!-- JavaScript -->
     <script src="js/javascript.js"></script>
 

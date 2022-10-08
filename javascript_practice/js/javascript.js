@@ -256,85 +256,114 @@ var myChart = new Chart(ctx_bar_stack, {
 
 
 //Initialize Swiper
-
-    // mySwiper＿time
-    var swiper = new Swiper(".mySwiper_time", {
-        loop: true,
-        autoplay: {
-            delay: 500,
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true
-        }
-    });
-    // mySwiper_click
-    var swiper = new Swiper(".mySwiper_click", {
-        loop: true,
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
-    // Slides per view
-    var swiper = new Swiper(".mySwiper_per_view", {
-        loop: true,
-        centeredSlides: true,
-        slidesPerView: 1,
-        breakpoints: {
-            // 768px以上の場合
-            768: {
-            slidesPerView: 3
-            }
-        },
-        spaceBetween: 20,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
+  // mySwiper＿time
+  var swiper = new Swiper(".mySwiper_time", {
+      loop: true,
+      autoplay: {
+          delay: 500,
+      },
+      pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+      }
   });
-  // Effect coverflow
-  var swiper = new Swiper(".mySwiper_effect_coverflow", {
-    loop: true,
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: "auto",
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+  // mySwiper_click
+  var swiper = new Swiper(".mySwiper_click", {
+      loop: true,
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+      },
+  });
+  // Slides per view
+  var swiper = new Swiper(".mySwiper_per_view", {
+      loop: true,
+      centeredSlides: true,
+      slidesPerView: 1,
+      breakpoints: {
+          // 768px以上の場合
+          768: {
+          slidesPerView: 3
+          }
+      },
+      spaceBetween: 20,
+      pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+      },
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+      },
+});
+// Effect coverflow
+var swiper = new Swiper(".mySwiper_effect_coverflow", {
+  loop: true,
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
   },
-  });
-  // Thumbs gallery loop
-  var swiper = new Swiper(".mySwiper_thumbs_gallery_loop", {
-    loop: true,
-    spaceBetween: 10,
-    slidesPerView: 5,
-    freeMode: true,
-    watchSlidesProgress: true,
-  });
-  var swiper2 = new Swiper(".mySwiper_thumbs_gallery_loop2", {
-    loop: true,
-    spaceBetween: 10,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+},
+});
+// Thumbs gallery loop
+var swiper = new Swiper(".mySwiper_thumbs_gallery_loop", {
+  loop: true,
+  spaceBetween: 10,
+  slidesPerView: 5,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+var swiper2 = new Swiper(".mySwiper_thumbs_gallery_loop2", {
+  loop: true,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: swiper,
+  },
+});
+// LodingのJS
+//テキストのカウントアップの設定
+var bar = new ProgressBar.Line(splash_text, {//id名を指定
+  strokeWidth: 0.5,//進捗ゲージの太さ
+  duration: 3000,//時間指定(1000＝1秒)
+  color: '#555',//進捗ゲージのカラー
+  trailColor: '#bbb',//ゲージベースの線のカラー
+  trailWidth: 0.5,//線の太さ
+  text: {//テキストの形状を直接指定 
+    style: {//天地中央に配置
+      position:'absolute',
+      left:'50%',
+      top:'50%',
+      padding:'0',
+      margin: '-30px 0 0 0',//バーより上に配置
+      transform:'translate(-50%,-50%)',
+      'font-size':'2rem',
+      color:'#fff',
     },
-    thumbs: {
-      swiper: swiper,
-    },
-  });
+    autoStyleContainer: false //自動付与のスタイルを切る
+  },
+  step: function(state, bar) {
+    bar.setText(Math.round(bar.value() * 100) + ' %'); //テキストの数値
+  }
+});
+
+//アニメーションスタート
+bar.animate(1.0, function () {//バーを描画する割合を指定します 1.0 なら100%まで描画します
+  $("#splash").delay(500).fadeOut(800);//アニメーションが終わったら#splashエリアをフェードアウト
+}); 
