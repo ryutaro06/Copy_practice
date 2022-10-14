@@ -427,3 +427,37 @@ $(function(){
     $(this).next('nav').slideToggle();
   });
 });
+
+// スクロール途中で追従
+$(function(){
+  var scrollStart_1 = $('.content-title_1').offset().top; //ページ上部からの距離を取得
+  var scrollStart_2 = $('.content-title_2').offset().top; //ページ上部からの距離を取得
+  var scrollStart_3 = $('.content-title_3').offset().top; //ページ上部からの距離を取得
+  // var scrollEnd = $('.end_box').offset().top; //ページ上部からの距離を取得
+  var distance = 0;
+ 
+  $(document).scroll(function(){
+    distance = $(this).scrollTop() + 180; //スクロールした距離を取得
+ 
+    if (scrollStart_1 <= distance) { //スクロール距離が『.sikaku_box』の位置を超えたら
+      $('.content-title_1').addClass('fixed'); //class『fixed』を追加
+    } else if (scrollStart >= distance) { //スクロールがページ上部まで戻ったら
+      $('.content-title_1').removeClass('fixed'); //class『fixed』を削除
+    }
+ 
+    if (scrollStart_2 <= distance) { //スクロール距離が『.end_box』の位置を超えたら
+      $('.content-title_2').addClass('fixed'); //class『fixed』を追加
+      $('.content-title_1').addClass('none'); //class『none』を追加
+    } else{
+      $('.content-title_2').removeClass('fixed'); //class『fixed』を削除
+      $('.content-title_1').removeClass('none'); //『.end_box』より上部に戻ったらclass『none』を削除
+    }
+    if (scrollStart_3 <= distance) { //スクロール距離が『.end_box』の位置を超えたら
+      $('.content-title_3').addClass('fixed'); //class『fixed』を追加
+      $('.content-title_2').addClass('none'); //class『none』を追加
+    } else{
+      $('.content-title_3').removeClass('fixed'); //class『fixed』を削除
+      $('.content-title_2').removeClass('none'); //『.end_box』より上部に戻ったらclass『none』を削除
+    }
+  });      
+});
