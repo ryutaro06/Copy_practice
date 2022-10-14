@@ -3,6 +3,7 @@
 /* 共通部分 */
 html {
     font-size: 100%;
+    scroll-behavior: smooth; /* スムーススクロール */
 }
 body {
     line-height: 1.7;
@@ -67,7 +68,9 @@ img {
 
 #js-navi a {
     color: #fff;
-    font-size: 14px;
+    font-size: 20px;
+    padding: 20px 20px 20px 0;
+    display: block;
 }
 
 .menu-open #js-navi {
@@ -83,7 +86,7 @@ img {
 .menu-open .nav-menu li {
     width: 80%;
     margin: 0 auto;
-    padding: 10px 10px 10px 0;
+    cursor: pointer;
 }
 #mask {
     display: none;
@@ -132,6 +135,23 @@ img {
     transform: translateY(-5.5px) rotate(-135deg);
 }
 
+/* page-scroll_button */
+.page-scroll_button {
+    position: fixed;
+    top: 120px;
+    right: 5%;
+    display: flex;
+    flex-direction: column;
+    z-index: 99;
+
+}
+.page-scroll_button button {
+    background-color: #0bd;
+    color: #fff;
+    padding: 8px 10px;
+    margin: 10px;
+}
+
 /* loding */
 #splash {
     /*fixedで全面に固定*/
@@ -155,7 +175,7 @@ img {
     transform: translate(-50%, -50%);
     color: #fff;
   }
-  
+
 /* main*/
 main {
     top: 0;
@@ -293,4 +313,73 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/*tabの形状*/
+.tab{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tab li a{
+    display: block;
+    background:#0bd;
+    margin:0 2px;
+    padding:10px 20px;
+}
+/*liにactiveクラスがついた時の形状*/
+.tab li.active a{
+    background:#fff;
+}
+/*エリアの表示非表示と形状*/
+.area {
+    display: none;/*はじめは非表示*/
+    opacity: 0;/*透過0*/
+    background: #fff;
+    padding:50px 20px;
+}
+
+/*areaにis-activeというクラスがついた時の形状*/
+.area.is-active {
+    display: block;/*表示*/
+    animation-name: displayAnime;/*ふわっと表示させるためのアニメーション*/
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes displayAnime{
+from {
+    opacity: 0;
+}
+to {
+    opacity: 1;
+}
+}
+
+/* tabのレイアウト */
+#tab_change_area li{
+    list-style: none;
+}
+.area li{
+    padding: 10px 0; 
+    border-bottom: 1px solid #ddd;
+    width: 30%;
+    list-style: decimal !important;
+    list-style-position: inside !important;
+}
+
+/* アコーディオン */
+.nav-open{
+	padding: 15px;
+	color: #fff;
+	font-size: 20px;
+	background: #2073c8;
+	position: relative;
+}
+.nav-open::before{/* 閉じている時 */
+	content: "ー";
+	position: absolute;
+	right: 10%;
+}
+.nav-open.active::before{/* 開いている時 */
+	content: "＋";
 }

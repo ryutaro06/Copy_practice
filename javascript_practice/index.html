@@ -27,6 +27,11 @@
     <script 
         src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
     </script>
+    <script 
+        src="https://code.jquery.com/jquery-3.4.1.min.js" 
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
+        crossorigin="anonymous">
+    </script>
 </head>
 <body>
     <div id="splash">
@@ -50,93 +55,30 @@
             <div id="mask"></div>
         </div>
     </header>
+    <div class="page-scroll_button">
+        <button id="upScroll">Top</button>
+        <button id="downScroll">bottom</button>
+    </div>
     <main id="top" class="wrapper">
         <section id ="graph">
-            <h1 class="content-title">グラフ表示</h1>
-            <div class="graph_flex">
-                <canvas id="mychart_line" class="graph_area" ></canvas>
-                <canvas id="mychart_doughnut" class="graph_area"></canvas>
-                <canvas id="mychart_pie" class="graph_area"></canvas>
-                <canvas id="mychart_bar" class="graph_area"></canvas>
-                <canvas id="mychart_time" class="graph_area"></canvas>
-                <canvas id="mychart_bar-stack" class="graph_area"></canvas>
-            </div>
+            <h1 class="content-title nav-open">グラフ表示</h1>
+            <nav>
+                <div class="graph_flex">
+                    <canvas id="mychart_line" class="graph_area" ></canvas>
+                    <canvas id="mychart_doughnut" class="graph_area"></canvas>
+                    <canvas id="mychart_pie" class="graph_area"></canvas>
+                    <canvas id="mychart_bar" class="graph_area"></canvas>
+                    <canvas id="mychart_time" class="graph_area"></canvas>
+                    <canvas id="mychart_bar-stack" class="graph_area"></canvas>
+                </div>
+            </nav>
         </section>
         <section class="swiper_time" id="swiper_link">
-            <h1 class="content-title">Swiper</h1>
-            <!-- Swiper -->
-            <p>0.5s時間毎に画像を移動</p>
-            <div class="swiper mySwiper_time">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="img/IMG_001.JPG" alt=""></div>
-                    <div class="swiper-slide"><img src="img/IMG_002.JPG" alt=""></div>
-                    <div class="swiper-slide"><img src="img/IMG_003.JPG" alt=""></div>
-                    <div class="swiper-slide"><img src="img/IMG_004.JPG" alt=""></div>
-                    <div class="swiper-slide"><img src="img/IMG_005.JPG" alt=""></div>
-                    <div class="swiper-slide"><img src="img/IMG_006.JPG" alt=""></div>
-                    <div class="swiper-slide"><img src="img/IMG_007.JPG" alt=""></div>
-                </div>
-                <!-- 必要に応じてページネーション -->
-                <div class="swiper-pagination"></div>
-            </div>
-            <!-- Default -->
-            <p>矢印(<>)をクリックして画像を移動</p>
-            <div class="swiper mySwiper_click">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="img/IMG_001.JPG" alt=""></div>
-                    <div class="swiper-slide"><img src="img/IMG_002.JPG" alt=""></div>
-                    <div class="swiper-slide"><img src="img/IMG_003.JPG" alt=""></div>
-                    <div class="swiper-slide"><img src="img/IMG_004.JPG" alt=""></div>
-                    <div class="swiper-slide"><img src="img/IMG_005.JPG" alt=""></div>
-                    <div class="swiper-slide"><img src="img/IMG_006.JPG" alt=""></div>
-                    <div class="swiper-slide"><img src="img/IMG_007.JPG" alt=""></div>
-                </div>
-                <!-- 必要に応じてナビボタン -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div>
-
-            <!-- Slides per view -->
-            <p>画像３つ並べる</p>
-            <div class="swiper mySwiper_per_view">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide img_100"><img src="img/IMG_001.JPG" alt=""></div>
-                    <div class="swiper-slide img_100"><img src="img/IMG_002.JPG" alt=""></div>
-                    <div class="swiper-slide img_100"><img src="img/IMG_003.JPG" alt=""></div>
-                    <div class="swiper-slide img_100"><img src="img/IMG_004.JPG" alt=""></div>
-                    <div class="swiper-slide img_100"><img src="img/IMG_005.JPG" alt=""></div>
-                    <div class="swiper-slide img_100"><img src="img/IMG_006.JPG" alt=""></div>
-                    <div class="swiper-slide img_100"><img src="img/IMG_007.JPG" alt=""></div>
-                </div>
-                <!-- 必要に応じてページネーション -->
-                <div class="swiper-pagination"></div>
-                <!-- 必要に応じてナビボタン -->
-                <div class="swiper-button-next sideclick_button"></div>
-                <div class="swiper-button-prev sideclick_button"></div>
-            </div>
-
-            <!-- Effect coverflow -->
-            <p>メイン画像とサブ画像</p>
-            <div class="swiper mySwiper_effect_coverflow">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide img_100"><img src="img/IMG_001.JPG" alt=""></div>
-                    <div class="swiper-slide img_100"><img src="img/IMG_002.JPG" alt=""></div>
-                    <div class="swiper-slide img_100"><img src="img/IMG_003.JPG" alt=""></div>
-                    <div class="swiper-slide img_100"><img src="img/IMG_004.JPG" alt=""></div>
-                    <div class="swiper-slide img_100"><img src="img/IMG_005.JPG" alt=""></div>
-                    <div class="swiper-slide img_100"><img src="img/IMG_006.JPG" alt=""></div>
-                    <div class="swiper-slide img_100"><img src="img/IMG_007.JPG" alt=""></div>
-                </div>
-                <!-- 必要に応じてページネーション -->
-                <div class="swiper-pagination"></div>
-                <!-- 必要に応じてナビボタン -->
-                <div class="swiper-button-next sideclick_button"></div>
-                <div class="swiper-button-prev sideclick_button"></div>
-            </div>
-            <!-- Thumbs gallery loop -->
-            <div class="thumbs_gallery_loop">
-                <p>ギャラリー型</p>
-                <div class="swiper mySwiper_thumbs_gallery_loop2">
+            <h1 class="content-title nav-open">Swiper</h1>
+            <nav>
+                <!-- Swiper -->
+                <p>0.5s時間毎に画像を移動</p>
+                <div class="swiper mySwiper_time">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"><img src="img/IMG_001.JPG" alt=""></div>
                         <div class="swiper-slide"><img src="img/IMG_002.JPG" alt=""></div>
@@ -146,26 +88,133 @@
                         <div class="swiper-slide"><img src="img/IMG_006.JPG" alt=""></div>
                         <div class="swiper-slide"><img src="img/IMG_007.JPG" alt=""></div>
                     </div>
+                    <!-- 必要に応じてページネーション -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!-- Default -->
+                <p>矢印(<>)をクリックして画像を移動</p>
+                <div class="swiper mySwiper_click">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/IMG_001.JPG" alt=""></div>
+                        <div class="swiper-slide"><img src="img/IMG_002.JPG" alt=""></div>
+                        <div class="swiper-slide"><img src="img/IMG_003.JPG" alt=""></div>
+                        <div class="swiper-slide"><img src="img/IMG_004.JPG" alt=""></div>
+                        <div class="swiper-slide"><img src="img/IMG_005.JPG" alt=""></div>
+                        <div class="swiper-slide"><img src="img/IMG_006.JPG" alt=""></div>
+                        <div class="swiper-slide"><img src="img/IMG_007.JPG" alt=""></div>
+                    </div>
+                    <!-- 必要に応じてナビボタン -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            
+                <!-- Slides per view -->
+                <p>画像３つ並べる</p>
+                <div class="swiper mySwiper_per_view">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide img_100"><img src="img/IMG_001.JPG" alt=""></div>
+                        <div class="swiper-slide img_100"><img src="img/IMG_002.JPG" alt=""></div>
+                        <div class="swiper-slide img_100"><img src="img/IMG_003.JPG" alt=""></div>
+                        <div class="swiper-slide img_100"><img src="img/IMG_004.JPG" alt=""></div>
+                        <div class="swiper-slide img_100"><img src="img/IMG_005.JPG" alt=""></div>
+                        <div class="swiper-slide img_100"><img src="img/IMG_006.JPG" alt=""></div>
+                        <div class="swiper-slide img_100"><img src="img/IMG_007.JPG" alt=""></div>
+                    </div>
+                    <!-- 必要に応じてページネーション -->
+                    <div class="swiper-pagination"></div>
+                    <!-- 必要に応じてナビボタン -->
                     <div class="swiper-button-next sideclick_button"></div>
                     <div class="swiper-button-prev sideclick_button"></div>
                 </div>
-                <div thumbsSlider="" class="swiper mySwiper_thumbs_gallery_loop">
+            
+                <!-- Effect coverflow -->
+                <p>メイン画像とサブ画像</p>
+                <div class="swiper mySwiper_effect_coverflow">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="img/IMG_001.JPG" alt=""></div>
-                        <div class="swiper-slide"><img src="img/IMG_002.JPG" alt=""></div>
-                        <div class="swiper-slide"><img src="img/IMG_003.JPG" alt=""></div>
-                        <div class="swiper-slide"><img src="img/IMG_004.JPG" alt=""></div>
-                        <div class="swiper-slide"><img src="img/IMG_005.JPG" alt=""></div>
-                        <div class="swiper-slide"><img src="img/IMG_006.JPG" alt=""></div>
-                        <div class="swiper-slide"><img src="img/IMG_007.JPG" alt=""></div>
+                        <div class="swiper-slide img_100"><img src="img/IMG_001.JPG" alt=""></div>
+                        <div class="swiper-slide img_100"><img src="img/IMG_002.JPG" alt=""></div>
+                        <div class="swiper-slide img_100"><img src="img/IMG_003.JPG" alt=""></div>
+                        <div class="swiper-slide img_100"><img src="img/IMG_004.JPG" alt=""></div>
+                        <div class="swiper-slide img_100"><img src="img/IMG_005.JPG" alt=""></div>
+                        <div class="swiper-slide img_100"><img src="img/IMG_006.JPG" alt=""></div>
+                        <div class="swiper-slide img_100"><img src="img/IMG_007.JPG" alt=""></div>
+                    </div>
+                    <!-- 必要に応じてページネーション -->
+                    <div class="swiper-pagination"></div>
+                    <!-- 必要に応じてナビボタン -->
+                    <div class="swiper-button-next sideclick_button"></div>
+                    <div class="swiper-button-prev sideclick_button"></div>
+                </div>
+
+                <!-- Thumbs gallery loop -->
+                <div class="thumbs_gallery_loop">
+                    <p>ギャラリー型</p>
+                    <div class="swiper mySwiper_thumbs_gallery_loop2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/IMG_001.JPG" alt=""></div>
+                            <div class="swiper-slide"><img src="img/IMG_002.JPG" alt=""></div>
+                            <div class="swiper-slide"><img src="img/IMG_003.JPG" alt=""></div>
+                            <div class="swiper-slide"><img src="img/IMG_004.JPG" alt=""></div>
+                            <div class="swiper-slide"><img src="img/IMG_005.JPG" alt=""></div>
+                            <div class="swiper-slide"><img src="img/IMG_006.JPG" alt=""></div>
+                            <div class="swiper-slide"><img src="img/IMG_007.JPG" alt=""></div>
+                        </div>
+                        <div class="swiper-button-next sideclick_button"></div>
+                        <div class="swiper-button-prev sideclick_button"></div>
+                    </div>
+                    <div thumbsSlider="" class="swiper mySwiper_thumbs_gallery_loop">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/IMG_001.JPG" alt=""></div>
+                            <div class="swiper-slide"><img src="img/IMG_002.JPG" alt=""></div>
+                            <div class="swiper-slide"><img src="img/IMG_003.JPG" alt=""></div>
+                            <div class="swiper-slide"><img src="img/IMG_004.JPG" alt=""></div>
+                            <div class="swiper-slide"><img src="img/IMG_005.JPG" alt=""></div>
+                            <div class="swiper-slide"><img src="img/IMG_006.JPG" alt=""></div>
+                            <div class="swiper-slide"><img src="img/IMG_007.JPG" alt=""></div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </nav>
         </section>
-        <section id="loading_link">
-            <h1 class="content-title">ローディング機能</h1>
-
-
+        <section id="tab_change_area">
+            <h1 class="content-title  nav-open">タブの切り替え</h1>
+            <nav>
+                <ul class="tab">
+                    <li><a href="#central_League_RBItitle">セリーグ_打点</a></li>
+                    <li><a href="#central_League_Battingtitle">セリーグ_打率</a></li>
+                    <li><a href="#central_League_HomeRuntitle">セリーグ_ホームラン</a></li>
+                </ul>
+                <div id="central_League_RBItitle" class="area">
+                    <h2>セリーグ_打点</h2>
+                    <ul>
+                        <li>村上</li>
+                        <li>大山</li>
+                        <li>牧</li>
+                        <li>佐藤</li>
+                        <li>岡本</li>
+                    </ul>
+                </div>
+                <div id="central_League_Battingtitle" class="area">
+                    <h2>セリーグ_打率</h2>
+                    <ul>
+                        <li>村上</li>
+                        <li>大島</li>
+                        <li>佐野</li>
+                        <li>宮崎</li>
+                        <li>ビシエド</li>
+                    </ul>
+                </div>
+                <div id="central_League_HomeRuntitle" class="area">
+                    <h2>セリーグ_ホームラン</h2>
+                    <ul>
+                        <li>村上</li>
+                        <li>岡本</li>
+                        <li>丸</li>
+                        <li>中田</li>
+                        <li>ポランコ</li>
+                    </ul>
+                </div>
+            </nav>
         </section>
     </main>
     <!-- Swiper JS -->
