@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+/* 共通部分 */
+html {
+    font-size: 100%;
+}
+body {
+    line-height: 1.7;
+    position: relative;
+}
+a {
+    text-decoration: none;
+}
+img {
+    width: 100%;
+}
+.wrapper {
+    /* max-width: 1100px; */
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+/* header */
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 50px;
+}
+
+.page-header {
+    font-size: 3rem;
+}
+/* main */
+/* contents */
+.sortarea {
+    padding: 20px 0;
+    background-color: #fff;
+    border: 1px solid #aaa;
+}
+.sortarea.fixed {
+    position: fixed;
+    top: 0;
+    left: 5%;
+    right: 5%;
+    z-index: 100;
+}
+.sortresult {
+    margin: 20px 0;
+}
+/* table */
+table {
+    background-color: #ffe;
+    border-collapse: collapse;
+    writing-mode : vertical-lr;
+    text-align: center;
+  }
+  table th {
+    background-color: #eee;
+  }
+  table th, table td {
+    border: solid 1px #aaa;
+    padding:15px;
+    writing-mode : horizontal-tb;
+    width: 200px;
+}
+
+.kari {
+    height: 1100px;
+    background-color: aqua;
+}
