@@ -36,6 +36,7 @@ header {
     padding: 20px 0;
     background-color: #fff;
     border: 1px solid #aaa;
+    height: 80px;
 }
 .sortarea.fixed {
     position: fixed;
@@ -63,8 +64,111 @@ table {
     writing-mode : horizontal-tb;
     width: 200px;
 }
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+}
 
+.swiper-wrapper p{
+    width: 100%;
+    display: block;
+    z-index: -1;
+}
 .kari {
     height: 1100px;
     background-color: aqua;
+}
+
+.main-table-flex {
+    display: flex;
+}
+.main-table-left {
+    width: 500px;
+    text-align: center;
+    background-color: skyblue;
+}
+.main-table_td,
+.main-table_th {
+    border: 1px solid #aaa;
+    text-align: center;
+}
+.main-table_th {
+    background-color: #f7efa2;
+    height: 42px;
+}
+.main-table_td {
+    background-color: #aeb5dc;
+    height: 40px;
+}
+.main-table-title {
+    height: 40px;
+    color: #000;
+}
+
+.swiper-button-next {
+    right: 5%;
+}
+.swiper-button-prev {
+    left: 5%;
+}
+.swiper-button-next.fixed {
+    position: fixed;
+    top: 120px;
+    right: 5%;
+    z-index: 100;
+}
+.swiper-button-prev.fixed {
+    position: fixed;
+    top: 120px;
+    left: 5%;
+    z-index: 100;
+}
+/* アコーディオン */
+
+.nav-open-accordion{
+    padding: 20px 0 0 10px;
+	color: #fff;
+	font-size: 20px;
+	background: #2073c8;
+	position: relative;
+}
+.nav-open-title {
+    padding-bottom: 20px;
+}
+.nav-open::before{/* 閉じている時 */
+	content: "ー";
+	position: absolute;
+	right: 10%;
+}
+.nav-open.active::before{/* 開いている時 */
+	content: "＋";
+}
+.nav-open.active nav {
+    display: none;
+}
+
+/* 前へ次への矢印カスタマイズ */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  bottom: 0;
+  content: "";
+  height: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  width: 0;
+  z-index: 100;
+}
+/* 前への矢印カスタマイズ */
+.swiper-button-prev:after {
+  border-bottom: 20px solid transparent;
+  border-right: 30px solid #333;
+  border-top: 20px solid transparent;
+}
+/* 次への矢印カスタマイズ */
+.swiper-button-next:after {
+  border-bottom: 20px solid transparent;
+  border-left: 30px solid #333;
+  border-top: 20px solid transparent;
 }

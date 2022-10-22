@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        /* height: 100%; */
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        /* 1        height: 100%; */
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        /* display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center; */
+      }
+
+      .swiper-slide img {
+        display: block;
+        /* width: 100%;
+        height: 100%;
+        object-fit: cover; */
+      }
+
+      /* .swiper-slide p {
+        margin: 0 auto;
+        min-height: 40px;
+        padding: 20px 10px;
+        border-style: solid;
+        border-top-style: none;
+        border-color: #666;
+        border-width: 1px;
+      } */
+
+      .swiper-slide .tdPad {
+        padding: 10px 12px;
+        margin: 5px 0;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+
+        border-right: 1px solid gray;
+        border-bottom: 1px solid gray;
+        line-height: 1.5em;
+      }
+
+      .swiper-slide span.valueTxtRed {
+        font-size: 24px;
+        color: #e33543;
+        font-weight: bold;
+        line-height: 1;
+      }
+
+      .swiper-slide span.unitRed {
+        font-size: 15px;
+        color: #e33543;
+        font-weight: bold;
+      }
+      .swiper-slide .subValue {
+        display: block;
+        color: #888;
+        font-size: 13px;
+        line-height: 1.2;
+        width: 100%;
+        margin-top: 5px;
+      }
+
+      .choiceImg {
+        line-height: 1;
+        display: block;
+      }
+      .p-valueRate {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .p-unitRate {
+        font-size: 15px;
+        position: relative;
+        transform: translateY(2px);
+      }
+      .p-crown--no2 {
+        position: relative;
+        color: #adb2bd;
+        padding-left: 23px;
+      }
+      .p-hikakuTableContents span.valueTxtBlack {
+        font-size: 18px;
+        word-break: break-all;
+      }
+      .p-hikakuTableContents span.unitBlack {
+        font-size: 13px;
+        word-break: break-all;
+        transform: translateY(2px);
+      }
+      .p-crown--no2::before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: "";
+        width: 22px;
+        height: 15px;
+        background-image: url(https://img1.kakaku.k-img.com/images/insurance/common/hkn_icons.svg);
+        background-size: 155px 75px;
+        background-repeat: no-repeat;
+        background-position: -1px -29px;
+      }
+      img {
+        vertical-align: top;
+        font-size: 0;
+        line-height: 0;
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="tdPad">
+            <p class="con">第1位</p>
+            <p class="">
+              <img
+                src="https://img1.kakaku.k-img.com/images/insurance/item/logo_306P01_m.png"
+                alt="フリーペットほけん"
+              />
+            </p>
+          </div>
+          <div class="tdPad">
+            <div>
+              <span class="valueTxtRed">1,950</span>
+              <span class="unitRed">円</span>
+            </div>
+            <span class="subValue">21,250円</span>
+          </div>
+          <div class="tdPad">
+            <div>
+              <span class="valueTxtBlack">234,200</span>
+              <span class="unitBlack">円</span>
+            </div>
+            <div
+              class="p-modal__trend s-dispPopup"
+              data-target="price_306P01002"
+              data-companyname="FPC"
+            >
+              <span class="p-modal__trendInner">更新保険料</span>
+            </div>
+          </div>
+          <div class="tdPad">
+            <div class="cell p-cvPad">
+              <span class="shdw-pdg">
+                <a
+                  href="/jump/sompo/?planid=306P01002&amp;lid=ins_fv_button"
+                  class="cl-1"
+                  target="_blank"
+                  rel="nofollow noopener"
+                >
+                  <span class="cv-btn-line-1 cv-btn-inbox">
+                    <span class="txt-wrap-half">
+                      <span class="l-icon-s1">
+                        <span class="fontWB clcv u-text15">オンライン試算</span>
+                        <span class="u-text11 clcv">保険会社サイトへ</span>
+                      </span>
+                    </span>
+                  </span>
+                </a>
+              </span>
+            </div>
+          </div>
+          <div class="tdPad">
+            <span class="p-valueRate">70</span>
+            <span class="p-unitRate">％</span>
+          </div>
+          <div class="tdPad">
+            <span class="choiceImg">
+              <img
+                src="https://img1.kakaku.k-img.com/images/insurance/search/hikaku_icon_symbol_01.svg"
+                width="34"
+                height="34"
+                alt="あり"
+              />
+            </span>
+          </div>
+          <div class="tdPad">
+            <span class="valueTxtBlack">12,500</span>
+            <span class="unitBlack">円</span>
+          </div>
+          <div class="tdPad">
+            <span class="valueTxtBlack">30</span>
+            <span class="unitBlack">日</span>
+          </div>
+          <p class=""></p>
+          <p class=""></p>
+          <p class=""></p>
+        </div>
+        <div class="swiper-slide">
+          <div>
+            <span class="p-crown--no2">
+              <span class="valueTxtBlack">2</span>
+              <span class="unitBlack">位</span>
+            </span>
+          </div>
+          <div class="tdPad">
+            <a
+              href="/jump/sompo/?planid=311P01001&amp;lid=ins_fv_logo"
+              class="itemLink"
+              target="_blank"
+              rel="nofollow noopener"
+            >
+              <p class="logoImg">
+                <img
+                  src="https://img1.kakaku.k-img.com/images/insurance/item/logo_311P01_m.png"
+                  alt="わんデイズ・にゃんデイズ"
+                />
+              </p>
+              <p class="itemName">リトルファミリー少額短期保険</p>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 0,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -389,6 +389,9 @@ to {
 }
 
 /* アコーディオン */
+nav {
+    display: none;
+}
 .nav-open{
 	padding: 15px;
 	color: #fff;
