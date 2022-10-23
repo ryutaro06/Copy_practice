@@ -180,13 +180,13 @@ var myChart = new Chart(ctx_bar, {
         title: {
           display: true,
           text: '点数',
-      },
+        },
       },
       x: {
         title: {
           display: true,
           text: '教科',
-      },
+        },
       },
     },
   },
@@ -433,31 +433,37 @@ $(function(){
   var scrollStart_1 = $('.content-title_1').offset().top; //ページ上部からの距離を取得
   var scrollStart_2 = $('.content-title_2').offset().top; //ページ上部からの距離を取得
   var scrollStart_3 = $('.content-title_3').offset().top; //ページ上部からの距離を取得
+
   // var scrollEnd = $('.end_box').offset().top; //ページ上部からの距離を取得
-  var distance = 0;
+  var distance_1 = 0;
+  var distance_2 = 0;
+  var distance_3 = 0;
  
   $(document).scroll(function(){
-    distance = $(this).scrollTop() + 180; //スクロールした距離を取得
- 
-    if (scrollStart_1 <= distance) { //スクロール距離が『.sikaku_box』の位置を超えたら
+    distance_1 = $(this).scrollTop() + 80; //スクロールした距離を取得
+    distance_2 = $(this).scrollTop() + 260; //スクロールした距離を取得
+    distance_3 = $(this).scrollTop() + 380; //スクロールした距離を取得
+
+
+    if (scrollStart_1 <= distance_1) { //スクロール距離が『.sikaku_box』の位置を超えたら
       $('.content-title_1').addClass('fixed'); //class『fixed』を追加
-    } else if (scrollStart >= distance) { //スクロールがページ上部まで戻ったら
+    } else {
       $('.content-title_1').removeClass('fixed'); //class『fixed』を削除
     }
  
-    if (scrollStart_2 <= distance) { //スクロール距離が『.end_box』の位置を超えたら
+    if (scrollStart_2 <= distance_2) { //スクロール距離が『.end_box』の位置を超えたら
       $('.content-title_2').addClass('fixed'); //class『fixed』を追加
-      $('.content-title_1').addClass('none'); //class『none』を追加
+      // $('.content-title_1').addClass('none'); //class『none』を追加
     } else{
       $('.content-title_2').removeClass('fixed'); //class『fixed』を削除
-      $('.content-title_1').removeClass('none'); //『.end_box』より上部に戻ったらclass『none』を削除
+      // $('.content-title_1').removeClass('none'); //『.end_box』より上部に戻ったらclass『none』を削除
     }
-    if (scrollStart_3 <= distance) { //スクロール距離が『.end_box』の位置を超えたら
+    if (scrollStart_3 <= distance_3) { //スクロール距離が『.end_box』の位置を超えたら
       $('.content-title_3').addClass('fixed'); //class『fixed』を追加
-      $('.content-title_2').addClass('none'); //class『none』を追加
+      // $('.content-title_2').addClass('none'); //class『none』を追加
     } else{
       $('.content-title_3').removeClass('fixed'); //class『fixed』を削除
-      $('.content-title_2').removeClass('none'); //『.end_box』より上部に戻ったらclass『none』を削除
+      // $('.content-title_2').removeClass('none'); //『.end_box』より上部に戻ったらclass『none』を削除
     }
   });      
 });

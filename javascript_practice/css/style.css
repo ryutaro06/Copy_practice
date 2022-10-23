@@ -21,6 +21,7 @@ img {
     padding: 0 5%;
 }
 
+
 section:last-child {
     margin-bottom: 500px;
 }
@@ -197,11 +198,24 @@ main {
     padding-bottom: 5px;
     border-bottom: 1px solid #000;
 }
-.content-title_1.fixed, 
-.content-title_2.fixed,
-.content-title_3.fixed  {
+.content-title_1.fixed {
     position: fixed;
     top: 80px;
+    left: 5%;
+    right: 5%;
+    z-index: 100;
+}
+.content-title_2.fixed  {
+    position: fixed;
+    top: 140px;
+    left: 5%;
+    right: 5%;
+    z-index: 100;
+}
+
+.content-title_3.fixed  {
+    position: fixed;
+    top: 200px;
     left: 5%;
     right: 5%;
     z-index: 100;
@@ -219,6 +233,7 @@ main {
 
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: 50px;
 }
 .graph_area {
     max-width: 350px;
@@ -389,9 +404,6 @@ to {
 }
 
 /* アコーディオン */
-nav {
-    display: none;
-}
 .nav-open{
 	padding: 15px;
 	color: #fff;
@@ -406,4 +418,7 @@ nav {
 }
 .nav-open.active::before{/* 開いている時 */
 	content: "＋";
+}
+.nav-open.active nav {
+    display: none;
 }
