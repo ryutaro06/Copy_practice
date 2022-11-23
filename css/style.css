@@ -81,6 +81,18 @@ li {
     text-align-last: left;
     margin-left: 50px;
 }
+.profile p {
+    text-align: left;
+}
+.profile ul {
+    padding: 10px 0;
+}
+.profile .list-disc li {
+    list-style: disc;
+    padding-left: 10px;
+    list-style-position: inside;
+    /* text-indent: -15px; */
+}
 .profile-name {
     font-weight: bold;
     margin: 10px 0;
@@ -109,14 +121,4 @@ li {
 footer {
     padding: 20px 0;
     text-align: center;
-}
-
-/* レスポンシブ対応 */
-@media (max-width: 600px) {
-    .profile {
-        flex-direction: column;
-    }
-    .baseball-post {
-        grid-template-columns: 1fr;
-    }
 }

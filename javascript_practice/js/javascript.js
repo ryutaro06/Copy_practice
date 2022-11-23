@@ -434,6 +434,8 @@ $(function(){
   var scrollStart_2 = $('.content-title_2').offset().top; //ページ上部からの距離を取得
   var scrollStart_3 = $('.content-title_3').offset().top; //ページ上部からの距離を取得
 
+  var content_title_1_class = $
+
   // var scrollEnd = $('.end_box').offset().top; //ページ上部からの距離を取得
   var distance_1 = 0;
   var distance_2 = 0;

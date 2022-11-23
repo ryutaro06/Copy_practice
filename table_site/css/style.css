@@ -49,21 +49,7 @@ header {
     margin: 20px 0;
 }
 /* table */
-table {
-    background-color: #ffe;
-    border-collapse: collapse;
-    writing-mode : vertical-lr;
-    text-align: center;
-  }
-  table th {
-    background-color: #eee;
-  }
-  table th, table td {
-    border: solid 1px #aaa;
-    padding:15px;
-    writing-mode : horizontal-tb;
-    width: 200px;
-}
+
 .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -86,7 +72,7 @@ table {
     display: flex;
 }
 .main-table-left {
-    width: 500px;
+    width: 50%;
     text-align: center;
     background-color: skyblue;
 }
@@ -109,10 +95,10 @@ table {
 }
 
 .swiper-button-next {
-    right: 5%;
+    right: 0%;
 }
 .swiper-button-prev {
-    left: 5%;
+    left: 0%;
 }
 .swiper-button-next.fixed {
     position: fixed;
@@ -123,13 +109,13 @@ table {
 .swiper-button-prev.fixed {
     position: fixed;
     top: 120px;
-    left: 5%;
+    left: 20%;
     z-index: 100;
 }
 /* アコーディオン */
 
 .nav-open-accordion{
-    padding: 20px 0 0 10px;
+    padding: 20px 0 0 0;
 	color: #fff;
 	font-size: 20px;
 	background: #2073c8;

@@ -287,18 +287,3 @@ footer p {
     text-align: center;
 }
 
-/* レスポンシブ対応 */
-@media (max-width: 750px) {
-    .contact-flex {
-        flex-direction: column;
-    }
-    .contact-text {
-        width: 100%;
-    }
-    .contact-form {
-        width: 100%;
-    }
-    .button {
-        width: 100%;
-    }
-}

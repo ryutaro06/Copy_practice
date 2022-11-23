@@ -1,0 +1,36 @@
+@media (max-width: 520px) {
+    .page-title {
+        text-align: center;
+    }
+    .main-nav {
+        display: block;
+    }
+    .wrapper {
+        padding: 0 4%;
+    }
+    .summary-content {
+        flex-direction: column;
+    }
+    .items {
+        width: 100%;
+    }
+    .items p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .main-content {
+        flex-direction: column;
+    }
+    article {
+        width: 100%;
+    }
+    aside {
+        width: 100%;
+    }
+    .sub-content {
+        flex-direction: column;
+    }
+    .sub-content-items {
+        width: 100%;
+    }
+}

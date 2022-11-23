@@ -1,0 +1,233 @@
+@charset "UTF-8";
+
+/* 共通部分 */
+html {
+    font-size: 100%;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+li {
+    list-style: none;
+}
+.wrapper {
+    margin: 0 auto;
+    padding: 0 12%;
+}
+
+/* header */
+header {
+    background-color: #0c4da2;
+    color: #fff;
+    position: relative;
+    height: 700px;
+}
+.page-header-image {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 4%;
+    right: 0;
+    background-image: url(../img/main_s.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 600px;
+    padding-top: 10px;
+}
+.page-header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-title {
+    font-weight: normal;
+    font-size: 20px;
+}
+.page-header-nav p {
+    font-size: 10px;
+}
+.page-header-right div{
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 15px;
+}
+.header-contact {
+    color: #fff;
+    background-color: #fff200;
+    padding: 8px 40px;
+    font-size: 16px;
+    margin-left: 20px;
+}
+.main-nav {
+    display: flex;
+}
+.main-nav a {
+    font-size: 12px;
+    margin-left: 20px;
+    color: #fff;
+}
+.main-nav-underline {
+    border-bottom: 1px solid #0c4da2;
+}
+
+.page-header-content {
+    margin: 100px 0;
+}
+.page-header-content p {
+    font-size: 14px;
+}
+.page-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+/* article ABOUT */
+#about {
+    margin-top: 80px;
+    margin-bottom: 120px;
+    position: relative;
+
+}
+article p {
+    font-size: 12px;
+}
+.content-title {
+    font-weight: bold;
+}
+.contnet-text {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px 0;
+}
+.about-img{
+    position: absolute;
+    top: -110px;
+    left: 45%;
+    width: 50%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* article PRODUCT */
+#product {
+    /* background-image: url(../img/main._mjpg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: #eaf1f2;
+    height: 700px;
+    text-align: center;
+}
+#product h3 {
+    font-size: 36px;
+    padding-top: 50px;
+    color: #0c4da2;
+}
+#product p {
+    font-size: 12px;
+}
+.product-text {
+    padding: 40px 0;
+}
+.item-grid {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.item {
+    margin-left: 30px;
+}
+.item img {
+    width: 200px;
+    height: 200px;
+}
+#product a,
+#facility a,
+#recruit a {
+    background-color: #0c4da2;
+    color: #fff;
+    padding: 20px 50px;
+    font-size: 8px;
+}
+#product a span,
+#facility a span,
+#recruit a span  {
+    font-size: 16px;
+    vertical-align: sub;
+}
+
+#facility {
+    background-color: #0c4da2;
+    position: relative;
+    width: 100%;
+    height: 650px;
+}
+.facility-position {
+    display: flex;
+    background-color: #ddd;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 8%;
+}
+.facility-img {
+    margin-top: 70px;
+    width: 600px;
+
+}
+.facility-position div {
+    margin-top: 70px;
+    margin-left: 80px;
+}
+.facility-position div h3 {
+    font-size: 40px;
+    color: #0c4da2;
+    vertical-align: sub;
+}
+
+.facility-position div p {
+    font-size: 12px;
+} 
+.facility-position div p+p {
+    margin-top: 20px;
+    margin-bottom: 80px;
+} 
+#recruit {
+    display: flex;
+    padding: 0 20%;
+    background-color: #eaf1f2;
+    height: 400px;
+    position: relative;
+}
+#recruit div {
+    margin-top: 50px;
+}
+#recruit h3{
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    letter-spacing: 0.2em;
+}
+#recruit p {
+    writing-mode: vertical-rl;
+    margin-left: 100px;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1.05rem;
+}
+.recruit-title {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 48px;
+    letter-spacing: 0.3em;
+    opacity: 0.5;
+    font-weight: 900;
+    vertical-align: bottom;
+    /* display: inline; */
+    line-height: 1;
+}

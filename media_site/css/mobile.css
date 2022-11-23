@@ -1,0 +1,32 @@
+@media (max-width: 520px) {
+    #video {
+        margin-bottom: 0;
+    }
+    video {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    #pickup,
+    #feature,
+    #contact {
+        padding-top: 50px;
+    }
+    #pickup .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .contact-flex {
+        flex-direction: column;
+    }
+    .contact-text {
+        width: 100%;
+    }
+    .contact-form {
+        width: 100%;
+    }
+    .button {
+        width: 100%;
+    }
+}

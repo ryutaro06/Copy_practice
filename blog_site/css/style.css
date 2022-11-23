@@ -196,32 +196,3 @@ footer {
     background-color: #EEE;
     text-align: center;
 }
-
-/* レスポンシブ対応 */
-@media (max-width: 766px) {
-    .summary-content {
-        flex-direction: column;
-    }
-    .items {
-        width: 100%;
-    }
-    .items p {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .main-content {
-        flex-direction: column;
-    }
-    article {
-        width: 100%;
-    }
-    aside {
-        width: 100%;
-    }
-    .sub-content {
-        flex-direction: column;
-    }
-    .sub-content-items {
-        width: 100%;
-    }
-}

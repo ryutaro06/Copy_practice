@@ -1,0 +1,27 @@
+
+@media (max-width: 520px) {
+    .main-content {
+        grid-template-columns: 1fr 1fr;
+    }
+    .product-content {
+        flex-direction: column;
+    }
+    .product-content img {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .product-text {
+        width: 100%;
+    }
+    .footer {
+        display: block;
+        text-align: center;
+    }
+    .footer-nav {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    .footer-nav li {
+        margin-left: 0;
+    }
+}
