@@ -6,16 +6,18 @@ html {
 }
 body {
     line-height: 1.7;
+    color: #383e45;
 }
 a {
     text-decoration: none;
+    color: #383e45;
 }
 img {
     max-width: 100%;
 }
 
 .wrapper {
-    max-width: 1100px;
+    max-width: 960px;
     margin: 0 auto;
     padding:0 4%;
 }
@@ -27,16 +29,19 @@ li {
 .page-header {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    height: 60px;
+    margin: 0 auto;
+    align-items: center;
+
 }
 .header-title {
-    background-color: #000;
-    padding: 10px 15px;
-    font-size: 20px;
+    width: 120px;
+    height: 40px;
+    margin: 10px 0;
 }
 .header-title a {
-    color: #fff;
+    display: block;
+    height: 40px;
 }
 .main-nav {
     display: flex;
@@ -46,9 +51,10 @@ li {
 .main-nav li {
     margin-left: 30px;
 }
-.main-nav a {
-    color: black;
+.main-nav li a {
+    font-size: 14px;
 }
+
 
 /* section */
 .content {

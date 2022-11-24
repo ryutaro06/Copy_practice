@@ -1,0 +1,20 @@
+@media (max-width: 600px) {
+    .main-img {
+        height: calc(100vh - 60px);
+    }
+    .profile {
+        flex-direction: column;
+    }
+    .baseball-post {
+        flex-direction: column;
+    }
+    .baseball {
+        width: 100%;
+    }
+    .baseball h3 {
+        padding: 15px 0;
+    }
+    .baseball p {
+        margin-bottom: 20px;
+    }
+}

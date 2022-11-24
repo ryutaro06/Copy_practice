@@ -5,17 +5,19 @@ html {
     font-size: 100%;
 }
 body {
-    line-height: 1.7;
+    font-size: 0.9rem;
+    color: #383e45;
 }
 a {
     text-decoration: none;
+    color: #383e45;
 }
 img {
     max-width: 100%;
 }
 
 .wrapper {
-    max-width: 1100px;
+    max-width: 960px;
     margin: 0 auto;
     padding:0 4%;
 }
@@ -27,16 +29,19 @@ li {
 .page-header {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    height: 60px;
+    margin: 0 auto;
+    align-items: center;
+
 }
 .header-title {
-    background-color: #000;
-    padding: 10px 15px;
-    font-size: 20px;
+    width: 120px;
+    height: 40px;
+    margin: 10px 0;
 }
 .header-title a {
-    color: #fff;
+    display: block;
+    height: 40px;
 }
 .main-nav {
     display: flex;
@@ -46,23 +51,31 @@ li {
 .main-nav li {
     margin-left: 30px;
 }
-.main-nav a {
-    color: black;
+.main-nav li a {
+    font-size: 14px;
+}
+
+/* main img */
+.main-img {
+    width: 100%;
+    max-width: 1920px;
+    height: 600px;
+    object-fit: cover;
+    margin-bottom: 5px;
 }
 
 /* section */
 .content {
-    margin-top: 100px;
+    margin-top: 80px;
     margin-bottom: 100px;
     text-align: center;
 }
 .content-title {
-    font-size: 30px;
+    display: inline-block;
+    font-size: 2rem;
+    text-align: center;
     margin-bottom: 60px;
-}
-.content-title span {
-    padding-bottom: 5px;
-    border-bottom: 1px solid #000;
+    border-bottom: solid 1px #383e45;
 }
 .profile {
     display: flex;
@@ -74,13 +87,13 @@ li {
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    margin-right: 30px;
+    object-fit: cover;
 }
 .profile-text {
     text-align-last: left;
-    margin-left: 20px;
 }
 .profile-name {
-    font-weight: bold;
     margin: 10px 0;
 }
 
@@ -89,30 +102,17 @@ li {
     justify-content: space-between;
 }
 .baseball {
-   width: 30%; 
+   width: 32%; 
+}
+.baseball h3 {
+    margin: 10px 0;
+    font-size: 1rem;
 }
 
 /* footer */
 footer {
-    padding: 20px 0;
+    font-size: 0.625rem;
+    padding: 10px 0;
     text-align: center;
 }
 
-/* レスポンシブ対応 */
-@media (max-width: 600px) {
-    .profile {
-        flex-direction: column;
-    }
-    .baseball-post {
-        flex-direction: column;
-    }
-    .baseball {
-        width: 100%;
-    }
-    .baseball h3 {
-        padding: 15px 0;
-    }
-    .baseball p {
-        margin-bottom: 20px;
-    }
-}
