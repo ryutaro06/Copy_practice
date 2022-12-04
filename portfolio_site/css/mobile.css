@@ -1,0 +1,44 @@
+/* レスポンシブ対応 */
+@media (max-width: 600px) {
+    .page-header {
+        flex-direction: column;
+        margin-top: 20px;
+        height: auto;
+    }
+    .header-nav li {
+        margin-left: 20px;
+    }
+    .header-nav img {
+        width: 20px;
+        height: 20px;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .news-content {
+        flex-direction: column;
+    }
+    .news-content dt {
+        width: 100%;
+        padding: 15px 15px 0 15px;
+    }
+    .news-content dd {
+        width: 100%;
+        border-top: none;
+        padding: 0 15px 15px 15px;
+    }
+    .contact-form {
+        flex-direction: column;
+    }
+    .contact-form label {
+        width: 100%;
+    }
+    .contact-form input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+    }
+    .button {
+        margin-top: 20px;
+    }
+}

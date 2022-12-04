@@ -65,8 +65,10 @@ li {
 }
 
 /* section */
+.content #About {
+    padding-top: 80px;
+}
 .content {
-    margin-top: 80px;
     margin-bottom: 100px;
     text-align: center;
 }

@@ -1,23 +1,16 @@
-@media (max-width: 520px) {
+@media (max-width: 768px) {
     .page-title {
         text-align: center;
     }
-    .main-nav {
-        display: block;
-    }
-    .wrapper {
-        padding: 0 4%;
-    }
+
     .summary-content {
         flex-direction: column;
+        margin-top: 140px;
     }
     .items {
         width: 100%;
     }
-    .items p {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
+    
     .main-content {
         flex-direction: column;
     }

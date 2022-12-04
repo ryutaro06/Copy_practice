@@ -5,54 +5,74 @@ html {
     font-size: 100%;
 }
 body {
-    line-height: 1.7;
+    color: #333333;
 }
 a {
     text-decoration: none;
+    font-size: 14px;
 }
 img {
     max-width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
 }
 .wrapper {
-    /* max-width: 1100px; */
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 8%;
+    padding: 0 16px;
 }
 
 /* header */
-.page-title {
-    margin: 10px 0;
-    font-weight: normal;
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 200px;
 }
-.page-title a {
-    color: #000;
-    font-size: 28px;
+
+.page-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: normal;
+    height: 30px;
+    display: inline-block;
+}
+.page-header h1 {
+    height: 70px;
+    background-color: #fff;
+}
+nav {
+    background-color: #333333;
 }
 .main-nav {
-    background-color: #333;
     display: flex;
-    padding: 0 8%;
+    width: 100%;
 }
 .main-nav li {
     list-style: none;
-    margin-right: 50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding: 10px 60px 10px 0;
+    font-size: 14px;
+    /* line-height: 19px; */
 }
 .main-nav a {
     color: #fff;
-    font-size: 12px;
 }
 
 /* section */
 .summary-content {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
-    margin-bottom: 100px;
+    margin-top: 150px;
+    margin-bottom: 60px;
 }
 .items {
-    width: 30%;
+    width: 32%;
+}
+.items h4 {
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 .items p {
     text-align: center;
@@ -61,7 +81,7 @@ img {
 .drop-down {
     position: relative;
     display: inline-block;
-    color: #000;
+    color: #333333;
 }
 .drop-down::after {
     position: absolute;
@@ -69,13 +89,13 @@ img {
     bottom: 2px;
     content:'';
     width: 100%;
-    height: 2px;
+    height: 1px;
     background-color: #333;
     opacity: 1;
     transition: .3s;
 }
 .drop-down:hover::after {
-    bottom: -4px;
+    bottom: -3px;
     opacity: 0;
     visibility: visible;
 }
@@ -83,68 +103,92 @@ img {
 .main-content {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 /* article */
 article {
-    width: 66%;
+    width: 65%;
 }
-article h2 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
+/* article img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+} */
 article p {
     text-align: center;
+    font-size: 14px;
 }
 .main-text {
-    padding: 10px 20px;
-    margin-bottom: 20px;
+    padding: 10px 40px 30px 40px;
+    font-size: 16px;
+    text-align: left;
 }
 .post-day {
     text-align-last: left;
     display: flex;
-    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 .post-day p {
     margin-right: 20px;
 }
 .article-unit {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 /* aside */
 aside {
     width: 30%;
+    padding: 0 20px;
+}
+aside p {
+    font-size: 14px;
 }
 aside h3 {
-    margin: 40px 0;
     text-align: center;
+    font-size: 18px;
+}
+.profile {
+    padding-top: 20px;
+}
+.profile h3 {
+    padding-top: 35px;
+    padding-bottom: 30px;
 }
 .profile div {
     text-align: center;
 }
 .profile-img {
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 130px;
+    height: 130px;
     object-fit: cover;
 }
 aside section {
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
 .ranking-items {
+    margin-top: 30px;
     margin-bottom: 30px;
 }
+.ranking-items p {
+    margin-top: 5px;
+}
 .archive-content a{
-    color: #000;
+    color: #333333;
 }
 .archive-content p {
     padding: 20px;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #333333;
+}
+.archive-content .border {
+    padding: 30px 0 0 0;
 }
 /* sub-content */
+.sub-content-color {
+    background-color: #f7f7f7;
+}
 .sub-content {
-    background-color: #EEE;
     display: flex;
     justify-content: space-between;
 }
@@ -162,11 +206,11 @@ aside section {
     margin-bottom: 20px;
 }
 .sub-content-items a {
-    color: #000;
+    color: #333333;
 }
 .sub-content-list {
-    padding: 15px 20px;
-    border-top: 1px solid #000;
+    padding: 15px 15px;
+    border-top: 1px solid #333333;
 }
 
 /* list_triangle */
@@ -188,11 +232,15 @@ aside section {
     width: 0px;
     height: 0px;
     border: 0.3em solid transparent;
-    border-left: 0.4em solid #000;
+    border-left: 0.4em solid #333333;
     content: "";
 }
 /* footer */
 footer {
-    background-color: #EEE;
+    background-color: #f7f7f7;
     text-align: center;
+}
+footer p {
+    padding: 10px 0;
+    font-size: 12px;
 }

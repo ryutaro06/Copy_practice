@@ -1,7 +1,9 @@
 
-@media (max-width: 520px) {
+
+@media (max-width: 900px) {
     .main-content {
         grid-template-columns: 1fr 1fr;
+        gap: 40px 6%;
     }
     .product-content {
         flex-direction: column;
@@ -13,15 +15,25 @@
     .product-text {
         width: 100%;
     }
+    .sub-content {
+        margin-bottom: 100px;
+    }
+    .company-text dt {
+        width: 100%;
+        border-bottom: none;
+        padding: 20px 10px 5px;
+    }
+    .company-text dd {
+        width: 100%;
+        padding: 5px 10px 20px;
+    }
     .footer {
         display: block;
-        text-align: center;
     }
     .footer-nav {
-        justify-content: space-between;
-        padding: 0 20px;
+        margin-bottom: 5px;
     }
-    .footer-nav li {
-        margin-left: 0;
-    }
+    
 }
+
+
