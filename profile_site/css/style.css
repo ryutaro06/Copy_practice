@@ -3,6 +3,7 @@
 /* 共有部分 */
 html {
     font-size: 100%;
+    scroll-behavior: smooth;
 }
 body {
     font-size: 0.9rem;
@@ -65,12 +66,16 @@ li {
 }
 
 /* section */
-.content #About {
+.content #About,
+.content #Baseball-diary {
     padding-top: 80px;
 }
 .content {
-    margin-bottom: 100px;
+    margin-bottom: 20px;
     text-align: center;
+}
+.content:last-of-type {
+    margin-bottom: 100px;
 }
 .content-title {
     display: inline-block;

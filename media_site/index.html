@@ -5,16 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media site</title>
+    
+    <!-- JavaScript -->
+    <link rel="stylesheet"  href="../slick/slick.css"/>
+    <link rel="stylesheet"  href="../slick/slick-theme.css"/>    
 
     <!-- css -->
     <link rel="stylesheet" href="css/ress.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
+
 </head>
 <body>
-    <header class="wrapper" id="fixed">
+    <header id="fixed">
         <div class="page-header">
-            <h1><a href="index.html">Furniture Design</a></h1>
+            <h1><a href="index.html"><img src="img/logo.svg" alt="Sneakers"></a></h1>
             <nav id="js-navi">
                 <ul class="nav-menu">
                   <li><a href="#pickup" id="pickup_link">PICK UP</a></li>
@@ -22,9 +27,9 @@
                   <li><a href="#contact" id ="contact_link">CONTACT</a></li>
                 </ul>
                 <ul class="nav-sns">
-                    <li><a href="https://www.instagram.com">Instagram</a></li>
                     <li><a href="https://twitter.com/">Twitter</a></li>
-                    <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li><a href="https://www.facebook.com/">facebook</a></li>
+                    <li><a href="https://www.instagram.com">instagram</a></li>
                 </ul>
             </nav>
             <div id="mobile-menu-icon">
@@ -40,133 +45,153 @@
     </div>
     <section id="pickup">
         <h2 class="topics-title">PICK UP</h2>
-        <div class="grid">
-            <img src="img/IMG_1021.JPG" alt="">
-            <img src="img/IMG_1021.JPG" alt="">
-            <img src="img/IMG_1021.JPG" alt="">
-            
+        <div class="slider">
+            <div class="slider-img"><img src="img/IMG_001.JPG" alt="ご飯の写真"></div>
+            <div class="slider-img"><img src="img/IMG_002.JPG" alt="ご飯の写真"></div>
+            <div class="slider-img"><img src="img/IMG_003.JPG" alt="ご飯の写真"></div>
+            <div class="slider-img"><img src="img/IMG_004.JPG" alt="ご飯の写真"></div>
+            <div class="slider-img"><img src="img/IMG_005.JPG" alt="ご飯の写真"></div>
+            <div class="slider-img"><img src="img/IMG_006.JPG" alt="ご飯の写真"></div>
+            <div class="slider-img"><img src="img/IMG_007.JPG" alt="ご飯の写真"></div>
+            <div class="slider-img"><img src="img/IMG_008.JPG" alt="ご飯の写真"></div>
+            <div class="slider-img"><img src="img/IMG_009.JPG" alt="ご飯の写真"></div>
         </div>
     </section>
     <section id="feature" class="wrapper_content">
         <h2 class="topics-title">FEATURE</h2>
         <div class="grid-item">
             <div class="items">
-                <img src="img/IMG_2807.jpeg" alt="" class="fade-in fade-in-up">
-                <p class="items-category">category</p>
-                <p class="items-text">
-                    テキストテキストテキストテキストテキスト
-                    テキストテキストテキストテキストテキスト
-                </p>
-                <p class="items-date">xxxx.xx.xx</p>
+                <picture>
+                    <source srcset="img/IMG_2807.webp" type="image/webp">
+                    <img src="img/IMG_2807.jpeg" alt="featureの写真" class="fade-in fade-in-up">
+                </picture>
+                <div class="items-text">
+                    <p class="items-category">category</p>
+                    <p class="items-title">
+                        テキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                    <p class="items-date">XXXX.XX.XX</p>
+                </div>
             </div>
             <div class="items">
-                <img src="img/IMG_2807.jpeg" alt="" class="fade-in fade-in-up">
-                <p class="items-category">category</p>
-                <p class="items-text">
-                    テキストテキストテキストテキストテキスト
-                    テキストテキストテキストテキストテキスト
-                </p>
-                <p class="items-date">xxxx.xx.xx</p>
+                <img src="img/IMG_2807.jpeg" alt="featureの写真" class="fade-in fade-in-up">
+                <div class="items-text">
+                    <p class="items-category">category</p>
+                    <p class="items-title">
+                        テキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                    <p class="items-date">XXXX.XX.XX</p>
+                </div>
             </div>
             <div class="items">
-                <img src="img/IMG_2807.jpeg" alt="" class="fade-in fade-in-up">
-                <p class="items-category">category</p>
-                <p class="items-text">
-                    テキストテキストテキストテキストテキスト
-                    テキストテキストテキストテキストテキスト
-                </p>
-                <p class="items-date">xxxx.xx.xx</p>
+                <img src="img/IMG_2807.jpeg" alt="featureの写真" class="fade-in fade-in-up">
+                <div class="items-text">
+                    <p class="items-category">category</p>
+                    <p class="items-title">
+                        テキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                    <p class="items-date">XXXX.XX.XX</p>
+                </div>
             </div>
             <div class="items">
-                <img src="img/IMG_2807.jpeg" alt="" class="fade-in fade-in-up">
-                <p class="items-category">category</p>
-                <p class="items-text">
-                    テキストテキストテキストテキストテキスト
-                    テキストテキストテキストテキストテキスト
-                </p>
-                <p class="items-date">xxxx.xx.xx</p>
+                <img src="img/IMG_2807.jpeg" alt="featureの写真" class="fade-in fade-in-up">
+                <div class="items-text">
+                    <p class="items-category">category</p>
+                    <p class="items-title">
+                        テキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                    <p class="items-date">XXXX.XX.XX</p>
+                </div>
             </div>
             <div class="items">
-                <img src="img/IMG_2807.jpeg" alt="" class="fade-in fade-in-up">
-                <p class="items-category">category</p>
-                <p class="items-text">
-                    テキストテキストテキストテキストテキスト
-                    テキストテキストテキストテキストテキスト
-                </p>
-                <p class="items-date">xxxx.xx.xx</p>
+                <img src="img/IMG_2807.jpeg" alt="featureの写真" class="fade-in fade-in-up">
+                <div class="items-text">
+                    <p class="items-category">category</p>
+                    <p class="items-title">
+                        テキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                    <p class="items-date">XXXX.XX.XX</p>
+                </div>
             </div>
             <div class="items">
-                <img src="img/IMG_2807.jpeg" alt="" class="fade-in fade-in-up">
-                <p class="items-category">category</p>
-                <p class="items-text">
-                    テキストテキストテキストテキストテキスト
-                    テキストテキストテキストテキストテキスト
-                </p>
-                <p class="items-date">xxxx.xx.xx</p>
+                <img src="img/IMG_2807.jpeg" alt="featureの写真" class="fade-in fade-in-up">
+                <div class="items-text">
+                    <p class="items-category">category</p>
+                    <p class="items-title">
+                        テキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                    <p class="items-date">XXXX.XX.XX</p>
+                </div>
             </div>
             <div class="items">
-                <img src="img/IMG_2807.jpeg" alt="" class="fade-in fade-in-up">
-                <p class="items-category">category</p>
-                <p class="items-text">
-                    テキストテキストテキストテキストテキスト
-                    テキストテキストテキストテキストテキスト
-                </p>
-                <p class="items-date">xxxx.xx.xx</p>
+                <img src="img/IMG_2807.jpeg" alt="featureの写真" class="fade-in fade-in-up">
+                <div class="items-text">
+                    <p class="items-category">category</p>
+                    <p class="items-title">
+                        テキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                    <p class="items-date">XXXX.XX.XX</p>
+                </div>
             </div>
             <div class="items">
-                <img src="img/IMG_2807.jpeg" alt="" class="fade-in fade-in-up">
-                <p class="items-category">category</p>
-                <p class="items-text">
-                    テキストテキストテキストテキストテキスト
-                    テキストテキストテキストテキストテキスト
-                </p>
-                <p class="items-date">xxxx.xx.xx</p>
+                <img src="img/IMG_2807.jpeg" alt="featureの写真" class="fade-in fade-in-up">
+                <div class="items-text">
+                    <p class="items-category">category</p>
+                    <p class="items-title">
+                        テキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                    <p class="items-date">XXXX.XX.XX</p>
+                </div>
             </div>
             <div class="items">
-                <img src="img/IMG_2807.jpeg" alt="" class="fade-in fade-in-up">
-                <p class="items-category">category</p>
-                <p class="items-text">
-                    テキストテキストテキストテキストテキスト
-                    テキストテキストテキストテキストテキスト
-                </p>
-                <p class="items-date">xxxx.xx.xx</p>
+                <img src="img/IMG_2807.jpeg" alt="featureの写真" class="fade-in fade-in-up">
+                <div class="items-text">
+                    <p class="items-category">category</p>
+                    <p class="items-title">
+                        テキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                    <p class="items-date">XXXX.XX.XX</p>
+                </div>
             </div>
         </div>
     </section>
-    <section id="contact" class="wrapper_content">
-        <h2 class="topics-title">CONTACT</h2>
-        <div class="contact-flex">
-            <div class="contact-text">
-                <p>
-                    テキストテキストテキストテキストテキスト
-                </p>
-                <p>
-                    テキストテキストテキストテキストテキスト
-                    テキストテキストテキストテキストテキスト
-                    テキストテキストテキストテキストテキスト
-                    テキストテキストテキストテキストテキスト
-                </p>
-                <p>
-                    テキストテキストテキストテキストテキスト
-                    テキストテキストテキストテキストテキスト
-                    テキストテキストテキストテキストテキスト
-                    テキストテキストテキストテキストテキスト
-                </p>
-            </div>
-            <div class="contact-form">
-                <div class="contact-form-item">
-                    <label for="name">NAME：</label>
-                    <input type="text" name="your-name" id="name">
+    <section id="contact">
+        <div class="wrapper_content">
+
+            <h2 class="topics-title">CONTACT</h2>
+            <div class="contact-flex">
+                <div class="contact-text">
+                    <p>
+                        テキストテキストテキスト
+                    </p>
+                    <p>
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                    <p>
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
                 </div>
-                <div class="contact-form-item">
-                    <label for="email">E-mail：</label>
-                    <input type="email" name="your-email" id="email">
+                <div class="contact-form">
+                    <form action="">
+                        <div class="contact-form-item">
+                            <label for="name">Name:</label>
+                            <input type="text" name="your-name" id="name">
+                        </div>
+                        <div class="contact-form-item">
+                            <label for="email">Mail:</label>
+                            <input type="email" name="your-email" id="email">
+                        </div>
+                        <div class="contact-form-item">
+                            <label for="message">Message</label>
+                            <textarea name="your-message" id="message"></textarea>
+                        </div>
+                        <input type="submit" value="SEND" class="button">
+                    </form>
                 </div>
-                <div class="contact-form-item">
-                    <label for="message">MESSAGE：</label>
-                    <textarea name="your-message" id="message" cols="0" rows="10"></textarea>
-                </div>
-                <input type="submit" value="SEND" class="button">
             </div>
         </div>
     </section>
@@ -176,6 +201,9 @@
         </div>
     </footer>
     <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="../slick/slick.min.js"></script>
+
     <script src="js/javascript.js"></script>
 </body>
 </html>

@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+/* 共有部分 */
+html {
+    font-size: 100%;
+    font-family: 'Arial', 'ヒラギノ角ゴシック',sans-serif;
+
+}
+body {
+    color: #333333;
+    letter-spacing: 0.1rem;
+}
+a {
+    text-decoration: none;
+    color: #333333;
+}
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding:0 30px;
+}
+li {
+    list-style: none;
+}
+/* header */
+header h1 {
+    text-align: center;
+    padding: 50px 0;
+    height: 156px;
+}
+header img {
+    display: inline-block;
+    height: 56px;
+    margin: 0 auto;
+}
+
+/* section main-img */
+.main-img {
+    aspect-ratio: 2.44 / 1;
+    object-fit: cover;
+    width: 100%;
+}
+/* page-nav */
+.page-nav ul {
+    display: flex;
+    justify-content: center;
+}
+.page-nav li {
+    padding: 40px;
+}
+.page-nav li a {
+    font-size: 18px;
+}
+.page-nav li:first-child {
+    padding-left: 0;
+}
+.page-nav li:last-child {
+    padding-right: 0;
+}
+
+/* concept */
+.concept {
+    display: flex;
+    margin: 50px auto 0;
+    align-items: center;
+}
+.concept img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: 50%;
+}
+.concept-text-area {
+    margin-left: 40px;
+}
+.concept-text-area p {
+    font-size: 16px;
+    line-height: 1.15;
+}
+.concept-text-area .concept-text-main {
+    font-weight: 300;
+    line-height: 1.8125rem;
+}
+.concept-text-area .concept-title {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 32px;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #24A8BF;
+}
+
+/* blog */
+.blog {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.blog-title {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0.16rem;
+    color: #24A8BF;
+    text-align: center;
+}
+.blog p {
+    /* padding-top: 8px; */
+    padding-bottom: 30px;
+    letter-spacing: 0.03rem;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+}
+.blog .grid-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.blog .items:hover {
+    opacity: 0.6;
+}
+.blog .items img {
+    aspect-ratio: 2 / 1;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+.blog .items .blog-title {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.5;
+    height: auto;
+    margin: 0;
+    padding-top: 11.5px;
+    padding-bottom: 6.5px;
+    color: #333333;
+    text-align: left;
+}
+.blog .items .blog-date {
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0;
+    text-align: left;
+    color: #333333;
+}
+
+.blog .btn {
+    display: block;
+    position: relative;
+    width: 220px;
+    margin: 30px auto;
+    padding: 18px 0;
+    border: 1px solid #24A8BF;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #24A8BF;
+    text-align: center;
+}
+.blog .btn::after {
+    display: block;
+    content: "";
+    position: absolute;
+    background-image: url(../img/icon_arrow-right.jpg);
+    background-size: 5px 9px;
+    width: 5px;
+    height: 9px;
+    top: 50%;
+    right: 1em;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+}
+footer {
+    background-color: #000000;
+    text-align: center;
+}
+.footer-title{
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+footer p {
+    padding-bottom: 30px;
+    color: #8B8B8B;
+    font-size: 12px;
+    letter-spacing: 0.05rem;
+}

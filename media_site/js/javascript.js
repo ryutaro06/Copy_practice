@@ -40,6 +40,25 @@ nav_menu.onclick = function() {
     fixed.classList.remove("menu-open");
 }
 
+// Swiper
+$(function () {
+    $(".slider").slick({
+        arrows: false,
+        centerMode: true,
+        centerPadding: "100px",
+        slidesToShow: 3,
+        responsive: [
+            {
+            breakpoint: 768, // 767px以下のサイズに適用
+            settings: {
+            slidesToShow: 1,
+            centerPadding: "60px",
+            },
+            },
+        ],
+    });
+  });
+
 // scroll
 let fadeInTarget = document.querySelectorAll('.fade-in');
 window.addEventListener('scroll', () => {

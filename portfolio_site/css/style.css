@@ -3,6 +3,7 @@
 /* 共通部分 */
 html {
     font-size: 100%;
+    scroll-behavior: smooth;
 }
 body {
     color: #24292e;
@@ -52,7 +53,7 @@ img {
     object-fit: cover;
 }
 .section {
-    margin-top: 80px;
+    padding-top: 80px;
     margin-bottom: 130px;
 }
 .section-title {

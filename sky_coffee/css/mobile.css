@@ -1,0 +1,76 @@
+@media (max-width: 770px) {
+    .wrapper {
+        padding: 0 20px;
+    }
+    header h1 {
+        padding: 30px 0;
+        height: 92px;
+    }
+    header a {
+        display: inline-block;
+        height: 32px;
+    }
+    header img {
+        height: 32px;
+    }
+    /* section main-img */
+    .main-img {
+        aspect-ratio: 1.1 / 1;
+    }
+    /* page-nav */
+    .page-nav li {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    /* concept */
+    .concept {
+        display: block;
+        margin-top: 40px;
+    }
+    .concept img {
+        width: 100%;
+    }
+    .concept-text-area {
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    .concept-text-area p {
+        font-size: 15px;
+    }
+    .concept-text-area .concept-title {
+        padding-top: 15px;
+        padding-bottom: 20px;
+        font-size: 26px;
+    }
+    .blog {
+        margin-top: 90px;
+    }
+    .blog-title {
+        font-size: 30px;
+    }
+    .blog p {
+        padding-top: 5px;
+        font-size: 12px;
+    }
+    .blog .grid-area {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .blog .items .blog-title {
+        padding-top: 7.5px;
+        padding-bottom: 1.5px;
+    }
+    .blog .btn {
+        width: 100%;
+    }
+    .footer-title{
+        margin-top: 60px;
+        margin-bottom: 40px;
+        height: 20px;
+    }
+    footer p {
+        padding-bottom: 20px;
+        font-size: 10px;
+    }
+}

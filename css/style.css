@@ -3,6 +3,7 @@
 /* 共有部分 */
 html {
     font-size: 100%;
+    scroll-behavior: smooth;
 }
 body {
     font-size: 0.9rem;
@@ -125,21 +126,46 @@ li {
 
 .profile-item a {
     display: inline-block;
-    color: #333;
+    /* color: #fff; */
+    /* background-color: #fbf8ef;
+    font-weight: bold;
+    font-size: 18px; */
     padding-top: 25px;
     width: 250px;
-    height: 100px;
+    height: 150px;
     text-align: center;
     align-items: center;
     border: 1px solid #333;
-    background-color: #fbf8ef;
-    font-weight: bold;
-    font-size: 18px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .profile-item a:hover {
-    color: #0bd;
+    opacity: 0.5;
 }
 
+/* ポートフォリオ画像 */
+.corporate_site {
+    background-image: url(../img/corporate_site.webp);
+}
+.sky_coffee {
+    background-image: url(../img/sky_coffee_site.webp);
+}
+.media_site {
+    background-image: url(../img/media_site.webp);
+}
+.store_site {
+    background-image: url(../img/store_site.webp);
+}
+.blog_site {
+    background-image: url(../img/blog_site.webp);
+}
+.portfolio_site {
+    background-image: url(../img/portfolio_site.webp);
+}
+.profile_site {
+    background-image: url(../img/profile_site.webp);
+}
 /* footer */
 footer {
     font-size: 0.625rem;
